@@ -12,8 +12,9 @@
 #home {
   background-image: url("../images/home.png");
   background-size: cover;
-  background-attachment: fixed;
   background-position: center top;
+  background-repeat: no-repeat;
+  min-height: 100vh;
 }
 
 #home header {
@@ -112,13 +113,13 @@
   width: 40%;
   text-align: center;
   padding-top: 80px;
+  padding-bottom: 50px;
 }
 
 #home #profile h2 {
   -webkit-animation-name: drop;
           animation-name: drop;
   font-size: 2.5em;
-  padding: 20px;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
   border-bottom: 3px solid black;
