@@ -22,9 +22,6 @@
 }
 
 @media screen and (max-width: 1020px) {
-  #home {
-    height: 100vh;
-  }
   #home #profile {
     padding-top: 150px;
     -webkit-box-sizing: border-box;
