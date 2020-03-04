@@ -23,11 +23,10 @@
         }
     }
 }
-@media screen and(max-width:1020px){
+@media screen and(max-width:1080px){
     #home{
         #profile{
-            padding-top: 150px;
-            box-sizing: border-box;
+            padding-top: 150px;            
             text-shadow: 5px 5px 5px rgba(0,0,0,0.9);
             h2{
                 font-size: 3em;
@@ -77,10 +76,24 @@
     }
 }
 @media screen and(max-width:930px){
+    #home{
+        #profile{
+            h2{
+                font-size: 2em;
+            }
+        }
+        header{
+            #desktopNav{
+                display: none;
+            }
+            #mobileNav{
+                display: block;
+            }
+        }
+    }
     #projects{
         section{
-            // flex-direction: column;
-            flex-wrap: wrap;            
+            flex-wrap: wrap;           
         }
     }
     #skills{
@@ -99,6 +112,9 @@
             flex-wrap: wrap;
             article{
                 width: 100%;
+                p{
+                    text-align: center;
+                }
                 ul{
                     margin-top: 50px;
                 }
@@ -106,27 +122,8 @@
                     width: 90%;
                 }
             }
-
         }
     }
-#home{
-    #profile{
-        h2{
-            font-size: 2em;
-
-        }
-    }
-    header{
-        #desktopNav{
-            display: none;
-        }
-        #mobileNav{
-            display: block;
-        }
-    }
-}
-
-    
 }
 @media screen and(max-width:670px){
 
@@ -135,6 +132,24 @@
             h2{
                 font-size: 1.5em;
     
+            }
+        }
+    }
+    #skills{
+        #skillset{
+            ul{
+                li{
+                    margin-top: 15px;
+                }
+            }
+        }
+    }
+    #contact{
+        section{
+            article{
+                p{
+                    text-align: center;
+                }
             }
         }
     }
@@ -178,6 +193,11 @@
                 padding: 0 50px;
                 li{
                     width: 100%;
+                    margin-top: 15px;
+                    .procenat{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
                 }
             } 
         }
@@ -203,6 +223,9 @@
                 display: flex;
                 justify-content: center;
                 flex-direction: column;
+                p{
+                    text-align: center;
+                }
 
             }
             
@@ -213,13 +236,30 @@
     #home{
         #profile{
             h2{
-                font-size: 1em;
-            
-            }
-            p{
-
+                font-size: 1em;            
             }
         }
     }
-
+    #skills{
+        #skillset{
+            ul{
+                li{
+                    margin-top: 15px;
+                    .procenat{
+                        margin-top: 10px;
+                        margin-bottom: 10px;
+                    }
+                }
+            }
+        }
+    }
+    #contact{
+        section{
+            article{
+                p{
+                    text-align: center;
+                }
+            }
+        }
+    }
 }
