@@ -109,7 +109,7 @@
   margin: 0 auto;
   width: 40%;
   text-align: center;
-  padding-top: 80px;
+  padding-top: 90px;
   padding-bottom: 50px;
 }
 
@@ -313,7 +313,8 @@
 
 #projects section article figure figcaption {
   text-align: center;
-  padding: 10px;
+  padding: 5px;
+  height: 40px;
 }
 
 #projects section article figure figcaption:hover {

@@ -93,7 +93,7 @@
             margin: 0 auto;
             width: 40%;
             text-align: center;
-            padding-top: 80px;
+            padding-top: 90px;
             padding-bottom: 50px;
             h2{
                 animation-name: drop;
@@ -225,7 +225,8 @@
                 }
                 figcaption{
                     text-align: center;
-                    padding: 10px;
+                    padding: 5px;
+                    height: 40px;
                     &:hover{
                         background-color: rgba($color: #000, $alpha: 0.4);
                     }
