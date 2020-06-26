@@ -1,24 +1,32 @@
-@media screen and(max-width:1180px){
-    #home{
-        
+@media screen and(max-width:1150px){
+    #home{        
         background-repeat: no-repeat;
         height: inherit;
         #profile{
-            color: #fff;
-            padding-top: 70px;
-            text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
-            background-color: rgba(0,0,0,0.6);
+            padding-top: 200px;
             h2{
-                font-size: 3.5em;
-
+                font-size: 4em;
             }
             p{
-                font-size: 14px;
+                font-size: 25px;
                 padding-top: 10px;
                 padding-bottom: 5px;
                 letter-spacing: 1px;
-                color: #fff;
-
+            }
+        }
+        #workLink{
+            margin-top: 100px;
+            ul{
+                padding: 20px;
+            }
+        }
+    }
+    #projects{
+        section{
+            article{
+                &:hover{
+                    transform: scale(1.03);
+                }
             }
         }
     }
@@ -26,16 +34,15 @@
 @media screen and(max-width:1080px){
     #home{
         #profile{
-            padding-top: 150px;            
-            text-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+            padding-top: 200px;            
             h2{
-                font-size: 3em;
-
-
+                font-size: 3.5em;
+                color: #000;
             }
             p{
-                font-size: 30px;
+                font-size: 25px;
                 padding-top: 10px;
+                color: #000;
             }
         }
         #workLink{
@@ -63,8 +70,18 @@
         }
         section{
             article{
+                    width: 400px;
+                    &:hover{
+                        transform: scale(1.01);
+                    }
                 figure{
-                    width: 280px;
+                    width: 220px;
+                }
+                #CheckIt{
+                    width: 400px;
+                    a{
+
+                    }
                 }
             }
         }
@@ -78,8 +95,8 @@
 @media screen and(max-width:930px){
     #home{
         #profile{
-            h2{
-                font-size: 2em;
+            p{
+                font-size: 20px;
             }
         }
         header{
@@ -97,6 +114,11 @@
         }
     }
     #skills{
+        #skill{
+            article{
+                width: 250px;
+            }
+        }
         #skillset{
             ul{
                 flex-wrap: wrap;            
@@ -125,16 +147,17 @@
         }
     }
 }
-@media screen and(max-width:670px){
-
-    #home{
-        #profile{
-            h2{
-                font-size: 1.5em;
-    
+@media screen and(max-width:720px){
+    #skills{
+        #skill{
+            flex-wrap: wrap;
+            article{
+                margin-top: 20px;
             }
         }
     }
+}
+@media screen and(max-width:670px){
     #skills{
         #skillset{
             ul{
@@ -155,6 +178,22 @@
     }
 
 }
+@media screen and(max-width:560px){
+    #home{
+        #profile{
+        h2{
+            font-size: 3em;
+        }
+        #workLink{
+            margin-top: 50px;
+            ul{
+                padding: 20px;
+            }
+        }
+    }
+}
+
+}
 @media screen and(max-width:480px){
     #home{
         header{
@@ -164,19 +203,16 @@
 
         }
         #profile{
-            text-shadow: 5px 5px 5px rgba(0,0,0,0.5);
             padding-top: 100px;
             h2{
-                font-size: 1.3em;
-                color: #fff;
+                font-size: 3em;
             }
             p{
-                font-size: 14px;
-                color: #fff;
+                font-size: 15px;
             }
         }
         #worklink{
-            margin-top: 0px;
+            margin-top: 50px;
             padding-top: 0px;
             ul{
                 margin-top: 0;
@@ -203,16 +239,18 @@
         }
     }
     #projects{
+        display: flex;
+        flex-direction: column;
         section{
-            
-            display: flex;
-            flex-direction: column;
             article{
-                display: flex;
-                justify-content: center;
-
+                width: 350px;
+                #CheckIt{
+                    width: 350px;            
+                }
             }
         }
+    }
+        
     }
     #contact{
         section{
@@ -236,11 +274,22 @@
     #home{
         #profile{
             h2{
-                font-size: 1em;            
+                font-size: 2.5em;            
+            }
+            #workLink{
+                margin-top: 30px;
+                ul{
+                    padding: 20px;
+                }
             }
         }
     }
     #skills{
+        #skill{
+            article{
+                width: 200px;
+            }
+        }
         #skillset{
             ul{
                 li{
