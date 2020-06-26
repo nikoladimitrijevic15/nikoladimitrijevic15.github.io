@@ -198,12 +198,12 @@
     #home{
         header{
             height: 100px;
-            position: relative;
+            position: fixed;
             width: 100%;
 
         }
         #profile{
-            padding-top: 100px;
+            padding-top: 170px;
             h2{
                 font-size: 3em;
             }
@@ -250,8 +250,6 @@
             }
         }
     }
-        
-    }
     #contact{
         section{
             display: flex;
@@ -270,8 +268,12 @@
         }
     }
 }
+
 @media screen and(max-width:380px){
     #home{
+        header{
+            position: fixed;
+        }
         #profile{
             h2{
                 font-size: 2.5em;            

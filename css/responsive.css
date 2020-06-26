@@ -149,11 +149,11 @@
 @media screen and (max-width: 480px) {
   #home header {
     height: 100px;
-    position: relative;
+    position: fixed;
     width: 100%;
   }
   #home #profile {
-    padding-top: 100px;
+    padding-top: 170px;
   }
   #home #profile h2 {
     font-size: 3em;
@@ -204,21 +204,6 @@
   #projects section article #CheckIt {
     width: 350px;
   }
-  #projects section article #CheckIt a {
-    text-decoration: none;
-    width: 100px;
-    -webkit-box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.5);
-            box-shadow: 10px 2px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    border: 1px solid #fff;
-  }
-  #projects section article #CheckIt a:hover {
-    width: 200px;
-    -webkit-transition: 0.5s;
-    transition: 0.5s;
-  }
   #contact section {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -249,6 +234,9 @@
 }
 
 @media screen and (max-width: 380px) {
+  #home header {
+    position: fixed;
+  }
   #home #profile h2 {
     font-size: 2.5em;
   }
