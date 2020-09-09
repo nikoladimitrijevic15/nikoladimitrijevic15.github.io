@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+body{
+    overflow-x: hidden;
+    color: #505962;
+    width: 100%;
+}
+.offset:before{
+    display: block;
+    content: "";
+    height: 4rem;
+    margin-top: -4rem;
+}
+.navbar{
+    font-weight: 500;
+    font-size: .9rem;
+    letter-spacing: .1rem;
+    background: rgba(8, 37, 53, 0.6)!important;
+}
+.aktivan{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.navbar-brand{
+    font-size: 1.6rem;
+    font-style: italic;
+    font-family: 'Orbitron', sans-serif;
+    letter-spacing: .5rem;
+    text-shadow: .1rem .1rem .8rem black;
+}
+.navbar-nav li{
+    font-size: 1rem;
+}
+.navbar-dark .navbar-nav .nav-link{
+    color: white;
+    text-shadow: .1rem .1rem .8rem black;
+}
+.landing .home-wrap .home-inner {
+    background-image: url(../images/knjige7.jpg);
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.caption{
+    width: 100%;
+    max-width: 100%;
+    position: absolute;
+    top: 38%;
+    z-index: 1;
+    color: white;
+}
+.caption h1{
+    text-transform: uppercase;
+    font-size: 3.8rem;
+    font-weight: 700;
+    letter-spacing: .3rem;
+    text-shadow: .1rem .1rem .8rem black;
+}
+.caption h3{
+    font-size: 2rem;
+    text-shadow: .1rem .1rem .5rem black;
+}
+.btn-lg{
+    border-width: small;
+    border-radius: 0;
+    font-weight: 500;
+    padding: .6rem 1.3rem;
+    font-size: 1.1rem;
+    color: black;
+    background-color: #1ebba3;
+}
+.btn-secondary{
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    padding: .6rem 1.2rem;
+    margin: 1rem;
+    color: white;
+    background-color: #1ebba3;
+    box-shadow: 2px 3px 3px rgba(0,0,0,0.75);
+}
+.jumbotron{
+    border-radius: 0;
+}
+h3.heading{
+    font-size: 1.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.heading-underline{
+    width: 3rem;
+    height: .2rem;
+    background-color: #1ebba3;
+    margin: 0 auto 2rem;
+}
+.ponudaNaslov{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+.ponudaSlova{
+    font-size: 1.1rem;
+}
+.fixed-background{
+    background-image: url(../images/knjige1.jpg);    
+    min-height: 500px;
+    z-index: 34;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.dark{
+    background-color: rgba(0,0,0,0.6);
+    min-height: 500px;
+}
+.fixedText{
+    color: white;
+    text-shadow: .1rem .1rem .8rem black;
+}
+.fixed-background p{
+    font-size: medium;
+}
+.clients img{
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 13px 14px 14px -10px rgba(0,0,0,0.75);
+}
+.clients-hr{
+    border-top: .05rem solid #1ebba3;
+}
+.form-style{
+    border-radius: 0;
+    border-width: 4px solid #07302a;
+}
+.labelText{
+    font-weight: 400;
+    font-size: 1.3rem;
+}
+.form-width{
+    width: 40%;
+}
+.picture{
+    min-height: 200px;
+    background-attachment: fixed;
+    background-image: url(../images/knjige2.jpg);
+    background-size: cover;
+}
+.picture1{
+    min-height: 200px;
+    background-attachment: fixed;
+    background-image: url(../images/zadecu.jpg);
+    background-size: cover;
+}
+footer{
+    background-color: #07302a;
+    color: black;
+    margin-top: 1rem;
+}
+footer a{
+    color: black;
+}
+.border-3 {
+    border-width:3px !important;
+    border-color: white !important;
+    font-size: large !important;
+    color: white !important;
+    font-weight: 600 !important;
+}
+.border-1{
+    border-color: #1ebba3 !important;    
+}
+.border-2{
+    border-width:3px !important;
+    border-color: #07302a !important;
+    font-size: large !important;
+    color: #07302a !important;
+    font-weight: 500 !important;
+}
+.icons{
+    font-size: 1.8rem;
+}
+footer #logo a:hover{
+    border-right: 1px dashed #1ebba3 !important;
+    color: #1ebba3;
+}
+.footer-color-font{
+    color: #22e0c4;
+}
+#chat{
+    position: fixed;
+    bottom: 30px;    
+    right: 30px;
+}
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+.fixed-background .feature{    
+    height: 70%;
+}
+.feature img{
+    width: 60%;
+    height: 100%;
+    box-shadow: 8px 17px 26px 7px rgba(0,0,0,0.75);    
+}
+.ispred{
+    z-index: 999;
+    font-size: 3rem;
+    color: #0056d6;
+    text-shadow: .2rem .2rem .2rem black;
+}
+.redKnjiga{
+    justify-content: space-between;
+}
+.redKnjiga img:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    transition: 0.5s;
+    -webkit-box-shadow: 0px 0px 20px -5px rgba(0,0,0,1);
+    -moz-box-shadow: 0px 0px 20px -5px rgba(0,0,0,1);
+    box-shadow: 0px 0px 20px -5px rgba(0,0,0,1);
+}
+.knjigaKatalog{
+    width: 150px;    
+}
+.redKnjiga .col-md-3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.knjigaNaslov{
+    text-align: center;
+}
+.modalKnjiga{
+    max-width: 70%;
+}
+    /* MAterialize CSS */
+.headerStyle{
+    opacity: 0.7;
+    height: 70px;
+}
+.linkStyle {
+    margin: 1rem;
+}
+.imgStyle{
+   height: 200px;
+}
+.margin-t{
+    margin-top: 2rem;
+}
+.peding{
+    padding: 1.2rem;
+}
+.textStyle{
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.justify{
+    text-align: justify;
+}
+.padding-t{
+    padding-top: 2rem;
+}
+.padding-r{
+    padding-right: 0.5rem;
+}
+.padding-b{
+    padding-bottom: 0.5rem;
+}
+.poruka{
+    padding-right: 0.8rem;
+}
+.padding-l{
+    padding-left: 0.5rem;
+}
+.fontBoja{
+    color: rgb(218, 141, 0);
+}
+.visina{
+    height: 400px;
+}
+.btnMat{
+    background-color: #1ebba3;
+}
+.fontNav{
+    font-weight: 650;
+    letter-spacing: 0.2rem;
+    font-size: 0.9rem;
+}
+.fontLogo{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 300;
+    margin-left: 2rem;    
+}
+.footerPadding{
+    margin-top: 3rem;
+}
+@media screen and (max-width: 992px){
+    .imgmargin{
+        margin-top: 3rem;
+    }
+    .imgcenter{
+        display: flex;
+        justify-content: center;
+    }
+    .fontLogo{
+        margin-left: 0;
+    }
+    .modalStyle{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 767px){
+    .caption h1{
+        font-size: 3rem;
+        letter-spacing: .15rem;
+        padding-bottom: .5rem;
+    }
+    .caption h3{
+        font-size: 1.2rem;
+        padding-bottom: 1.2rem;
+    }
+    .btn-lg{
+        padding: .5rem 1rem;
+        font-size: 1rem;        
+    }
+    h1.velicina{
+        font-size: 2rem;
+    }
+    .clients img{
+        max-width: 50%;
+        display: block;
+        margin: 0 auto;
+    }
+    .knjigaKatalog{
+        width: 70%;
+        margin-top: 1rem;        
+    }
+    .border-3 {
+        border-width: 0px !important;
+        padding-bottom: 1.6rem !important;
+        border-color: white !important;
+        font-size: 1.5rem !important;
+        color: white !important;
+        font-weight: 700 !important;
+        text-align: center;
+    }
+    .footer-color-font{
+        text-align: center;
+    }
+    .form-width{
+        width: 60%;
+    }
+}
+@media screen and (max-width: 575px){
+    .form-width{
+        width: 90%;
+    }
+}
+@media screen and (max-width: 462px){
+    .caption h1{
+        font-size: 2rem;
+        letter-spacing: .1rem;
+        padding-bottom: .5rem;
+    }
+    .caption h3{
+        font-size: 1.5rem;
+        padding-bottom: 1.2rem;
+    }
+}

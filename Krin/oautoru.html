@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Izdavačka kuća Krin osnovana je maja 1998. godine. Od pocetka broj objavljenih naslova je bio svega nekoliko za godinu dana, a danas brojimo hiljade njih. Posetite nas i uverite se!"/>
+    <meta name="author" content="Nikola Dimitrijević"/>
+    <meta name="keywords" content="knjizara, knjige, citanje, literatura, biblioteka, prodavnica"/>
+    
+    <title>Knjižara | KRIN</title>
+
+    <script src="https://kit.fontawesome.com/9902428994.js"></script>
+
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+        <!-- Navigacija-->
+    <div class="navbar-fixed">
+        <nav class="headerStyle">
+            <div class="nav-wrapper blue-grey darken-2 ">
+                <a href="index.html" class="brand-logo fontLogo logoPadding">Krin</a>
+                <a href="index.html" data-target="mobile-demo" class="sidenav-trigger"><i class="fas fa-bars material-icons"></i></a>
+                <ul class="right hide-on-med-and-down fontNav">
+                <li><a href="index.html">Naslovna</a></li>
+                <li><a href="knjige.html">Knjige</a></li>
+                <li><a href="naruci.html">Naručite</a></li>
+                <li><a class="aktivan" href="oautoru.html">Autor</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <ul class="sidenav visina" id="mobile-demo">
+        <li><a href="index.html">Naslovna</a></li>
+        <li><a href="knjige.html">Knjige</a></li>
+        <li><a href="naruci.html">Naručite</a></li>
+        <li class="active"><a href="oautoru.html">Autor</a></li>
+    </ul>
+        <!--End Navigacija-->
+              
+        <!-- Naslov Autor-->
+    <div class="s-12 center-align">
+        <h3 class="heading">Autor sajta</h3>
+        <div class="heading-underline"></div>
+    </div>
+        <!--End Naslov Autor-->
+
+        <!-- O autoru-->
+      <div class="row peding">
+          <div class="col m12 l6">
+                <div class="col s12">
+                    <p class="textStyle justify">Student prve godine visoke ICT škole u Beogradu, ovo je moj treći po redu projekat koji radim u školi. Ovaj projekat je napravljen pomoću Bootstrap i Materialize framework-a, uključujuči i malo javascript-a. Za čekiranje ostalih projekata koje sam radio posetite moj Portfolio(link ispod). Za sada, moji radovi se baziraju na webu, pratite moj portfolio jer uskoro stizu projekti bazirani na Objektno Orijentisanom Programiranju.</p>
+                </div>
+                <div class="col s12 center-align">
+                    <a class="btn z-depth23 btnMat" href="https://nikoladimitrijevic15.github.io/" target="_blank">PORTFOLIO</a>
+                </div>
+                
+                <div class="col s12">
+                    <p class="textStyle center-align">Pošaljite mi poruku, ukoliko imate odredjena pitanja u vezi saradnje</p>
+                </div>
+                <div class="col s12 center-align">
+                    <a class="btn z-depth-2 btnMat" href="#Saradnja"><i class="fas fa-comment-alt poruka"></i>PORUKA</a>
+                </div>
+            </div>
+            <div class="col m12 l6 center-align imgCenter"><img class="responsive-img circle hoverable imgmargin" src="images/profil1.jpg" alt="profile picture"/></div>
+        </div>
+        <!--End O autoru-->
+
+        <!-- Drustvene mreze-->
+        <div class="row peding">
+            <div class="col s3 center-align">
+                <a class="btn-floating pulse" href="https://sr-rs.facebook.com/" target="_blank"><i class="fa fa-facebook-square material-icons circle orange lighten-2"></i></a>
+            </div>
+            <div class="col s3 center-align">
+                <a class="btn-floating pulse" href="https://www.instagram.com/?hl=sr" target="_blank"><i class="fa fa-instagram material-icons circle orange lighten-2"></i></a>
+            </div>
+            <div class="col s3 center-align">
+                <a class="btn-floating pulse" href="mailto: nikoladjidji15@gmail.com"><i class="fas fa-envelope material-icons circle orange lighten-2"></i></a>
+            </div>
+            <div class="col s3 center-align">
+                <a class="btn-floating pulse" href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin material-icons circle orange lighten-2"></i></a>
+            </div>      
+        </div>
+        <!--End Drustvene mreze-->
+
+        <!-- Saradnja-->
+      <div id="Saradnja" class="s-12 center-align">
+        <h3 class="heading peding">Želite da saradjujemo?</h3>
+        <div class="heading-underline"></div>
+        <form method="GET" action="">
+            <div class="row mt-5">
+                <div class="input-field col s12 l6">
+                    <input id="email" type="email" class="validate"/>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-field col s12 l6">
+                    <input id="Ime" type="text" class="validate"/>
+                    <label for="Ime">Ime i Prezime</label>
+                </div>
+            </div>
+            <div class="row">
+                  <div class="col s12">
+                    <div class="input-field col s12">
+                      <textarea id="textarea1" class="materialize-textarea"></textarea>
+                      <label for="textarea1">Poruka</label>
+                    </div>
+                  </div>
+                </form>
+        </div>
+        <!-- End Saradnja-->
+
+        <!-- Saradnja modal-->
+            <div class="row">
+                <div class="col s12 center-align mt-5">
+                    <a id="formBtn" class="waves-effect btn modal-trigger orange lighten-1" href="#modal1">Pošaljite</a>
+                    <div id="modal1" class="modal">
+                        <div class="modal-content">
+                          <h4>Dostavljeno</h4>
+                          <p>Vaša poruka je poslata, dobićete odgovor za najkasnije 24h.</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        <!--End Saradnja modal-->
+
+        <!--Slider-->
+            <div class="s-12 center-align">
+                <h3 class="heading peding">Moja preporuka knjiga</h3>
+                <div class="heading-underline"></div>
+            </div>
+              <div class="carousel center teal lighten-5">
+                <a class="carousel-item center-align" href="#one!"><img src="images/p1.jpg" alt="book1"></a>
+                <a class="carousel-item center-align" href="#two!"><img src="images/p2.jpg" alt="book2"></a>
+                <a class="carousel-item center-align" href="#three!"><img src="images/p3.jpg" alt="book3"></a>
+                <a class="carousel-item center-align" href="#four!"><img src="images/p4.jpg" alt="book4"></a>
+                <a class="carousel-item center-align" href="#five!"><img src="images/p5.jpg" alt="book5"></a>
+              </div>
+        <!--End Slider-->
+
+        <!--Footer-->
+      <footer class="page-footer grey darken-4 footerPadding">
+          <div class="row">
+            <div class="col l4 s12">
+              <h5 class="white-text peding">Krin</h5>
+              <ul>
+                <li class="grey-text text-lighten-3 peding"><i class="fas fa-phone-alt padding-r"></i>+381 63678643</li>
+                <li class="grey-text text-lighten-3"><i class="fas fa-search-location padding-r"></i>Igmanska 10, Zvezdara, Beograd</li>
+                <li class="grey-text text-lighten-3 peding"><i class="fas fa-envelope padding-r"></i>knjigeKrin@gmail.com</li>
+              </ul>
+              
+            </div>
+            <div class="col l4 s12">
+                <h5 class="white-text peding">Drustvene mreze</h5>
+                <p>Takodje me mozete potraziti i na drustvenim mrezama</p>
+                <div class="row peding">
+                    <div class="col s3 center-align">
+                        <a class="btn-floating pulse" href="https://sr-rs.facebook.com/" target="_blank"><i class="fa fa-facebook-square material-icons circle orange lighten-2"></i></a>
+                    </div>
+                    <div class="col s3 center-align">
+                        <a class="btn-floating pulse" href="https://www.instagram.com/?hl=sr" target="_blank"><i class="fa fa-instagram material-icons circle orange lighten-2"></i></a>
+                    </div>
+                    <div class="col s3 center-align">
+                        <a class="btn-floating pulse" href="mailto: nikoladjidji15@gmail.com"><i class="fas fa-envelope material-icons circle orange lighten-2"></i></a>
+                    </div>
+                    <div class="col s3 center-align">
+                        <a class="btn-floating pulse" href="https://www.linkedin.com/feed/" target="_blank"><i class="fab fa-linkedin material-icons circle orange lighten-2"></i></a>
+                    </div>      
+                </div>
+            </div>
+            <div class="col l4 s12">
+                <h5 class="white-text peding">Kontaktirajte me</h5>
+                <ul>
+                    <li class="peding"><a class="btn z-depth23 btnMat" href="https://nikoladimitrijevic15.github.io/" target="_blank">PORTFOLIO</a></li>        
+                    <li class="peding"><a class="btn z-depth-2 btnMat" href="#Saradnja"><i class="fas fa-comment-alt poruka"></i>PORUKA</a></li>
+                </ul>
+            </div>
+          </div>
+          <div>
+              <a class="grey-text text-lighten-3 padding-r" href="">CSS</a>
+              <a class="grey-text text-lighten-3 padding-l" href="">SITEMAP</a>
+          </div>
+        <div class="footer-copyright">
+          <div class="container footer-color-font">
+            All rights reserved, 2020, Dimitrijević Nikola &copy;
+          </div>
+        </div>
+      </footer>
+        <!--End Footer-->
+
+        <script src="materialize/js/jquery-3.3.1.min.js"></script>
+        <script src="materialize/js/materialize.min.js"></script>
+        <script>
+  
+            $(document).ready(function(){
+                $('.modal').modal();
+                });
+  
+  
+            $(document).ready(function(){
+            $('.carousel').carousel();
+                });
+
+            $('#textarea1').val('New Text');
+
+            $('#textarea1').trigger('autoresize');
+
+            $(document).ready(function(){
+                $('.sidenav').sidenav();
+            });
+        </script>
+</body>
+
+
+</html>

@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Izdavačka kuća Krin osnovana je maja 1998. godine. Od pocetka broj objavljenih naslova je bio svega nekoliko za godinu dana, a danas brojimo hiljade njih. Posetite nas i uverite se!"/>
+    <meta name="author" content="Nikola Dimitrijević"/>
+    <meta name="keywords" content="knjizara, knjige, citanje, literatura, biblioteka, prodavnica"/>
+    
+    <title>Knjižara | KRIN</title>
+
+    <script src="https://kit.fontawesome.com/9902428994.js"></script>
+
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+
+  <button type="button" class="btn ispred" id="chat" data-toggle="modal" data-target="#chatModal">
+    <i class="fas fa-comment-alt"></i>
+  </button>
+
+   <!-- Modal Poruka-->
+   <div class="modal fade" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chatModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="chatModalLabel">Pošaljite poruku</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="form-group">
+              <label for="Email">Email adresa</label>
+              <input type="email" class="form-control" id="modalEmail" aria-describedby="emailHelp" placeholder="primer@gmail.com">
+              <small id="emailHelp" class="form-text text-muted">Vaša email adresa neće biti otkrivena. Osećajte se bezbedno.</small>
+            </div>
+            <div class="form-group">
+              <label for="ime">Ime i Prezime</label>
+              <input type="text" class="form-control" id="modalIme" placeholder="Petar Petrović">
+            </div>
+              <div class="form-group">
+                <label for="Poruka">Unesite poruku</label>
+                <textarea class="form-control" id="modalText" rows="3"></textarea>
+              </div>
+            <button type="submit" class="btn btn-primary">Pošaljite</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Modal Poruka-->
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+    <a class="navbar-brand pl-5 pr-3 border border-right-0" href="Index.html">Krin</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item pr-2">
+                    <a class="nav-link pt-1" href="index.html">Naslovna</a>
+                </li>
+                <li class="nav-item pr-2">
+                    <a class="nav-link aktivan pt-1" href="knjige.html">Knjige</a>
+                </li>
+                <li class="nav-item pr-2">
+                    <a class="nav-link pt-1" href="naruci.html">Naručite</a>
+                </li>
+                <li class="nav-item pr-2">
+                    <a class="nav-link pt-1" href="oautoru.html">Autor</a>
+                </li>
+            </ul>
+        </div>
+</nav>
+
+<div class="container">
+  <div class="col-12 text-center pt-5">
+    <h3 class="heading mt-5">Katalog</h3>
+    <div class="heading-underline"></div>
+  </div>
+  <div class="row mt-4 pt-2 redKnjiga">
+    <div class="col-md-3 col-sm-12">
+      <img src="images/k1.jpg" class="knjigaKatalog" alt="book" data-toggle="modal" data-target="#knjiga1">
+      <p class="knjigaNaslov mt-2">Elif Šefik</p>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <img src="images/k2.jpg" class="knjigaKatalog" alt="book" data-toggle="modal" data-target="#knjiga2">
+      <p class="knjigaNaslov mt-2">Andreas Guski</p>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <img src="images/k3.jpg" class="knjigaKatalog" alt="book" data-toggle="modal" data-target="#knjiga3">
+      <p class="knjigaNaslov mt-2">Dejan Stojiljković</p>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <img src="images/k4.jpg" class="knjigaKatalog" alt="book" data-toggle="modal" data-target="#knjiga4">
+      <p class="knjigaNaslov mt-2">Nenad Novak</p>
+
+    </div>
+  </div>
+  <div class="row mt-4 redKnjiga">
+    <div class="col-md-3 col-sm-12">
+      <img src="images/k5.jpg" class="knjigaKatalog" alt="book" data-toggle="modal" data-target="#knjiga5">
+      <p class="knjigaNaslov mt-2">Linda Bustrem</p>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <img src="images/k6.jpg" class="knjigaKatalog" alt="book" data-toggle="modal" data-target="#knjiga6">
+      <p class="knjigaNaslov mt-2">Slaviša Pavlović</p>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <img src="images/k7.jpg" class="knjigaKatalog" alt="book" data-toggle="modal" data-target="#knjiga7">
+      <p class="knjigaNaslov mt-2">Robert Džordan</p>
+    </div>
+    <div class="col-md-3 col-sm-12">
+      <img src="images/k8.jpg" class="knjigaKatalog" alt="" data-toggle="modal" data-target="#knjiga8">
+      <p class="knjigaNaslov mt-2">Mari Benedikt</p>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="knjiga1" tabindex="-1" role="dialog" aria-labelledby="knjiga1Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel1">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k1.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 500 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga2" tabindex="-1" role="dialog" aria-labelledby="knjiga2Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel2">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k2.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 600 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga3" tabindex="-1" role="dialog" aria-labelledby="knjiga3Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel3">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k3.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 670 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga4" tabindex="-1" role="dialog" aria-labelledby="knjiga4Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel4">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k4.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 800 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="knjiga5" tabindex="-1" role="dialog" aria-labelledby="knjiga5Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel5">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k5.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 680 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga6" tabindex="-1" role="dialog" aria-labelledby="knjiga6Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel6">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k6.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 720 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga7" tabindex="-1" role="dialog" aria-labelledby="knjiga7Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel7">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k7.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 760 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="knjiga8" tabindex="-1" role="dialog" aria-labelledby="knjiga8Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel8">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k8.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 720 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Modal -->
+
+<div id="Preporuke" class="offset">
+  <div class="jumbotron mt-5">
+      <div class="col-12 text-center">
+          <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>               
+           <h3 class="heading">Preporuke</h3>
+          <a class="carousel-control-next" href="#carouselControls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          <div class="heading-underline"></div>
+      </div>
+
+      <div id="carouselControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row pt-4">
+                
+                <div class="container">
+                  <div class="row redKnjiga">
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k24.jpg" class="knjigaKatalog" alt="" data-toggle="modal" data-target="#knjiga9">
+                      <p class="knjigaNaslov mt-2">Dobrica Ćosić</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k23.jpg" class="knjigaKatalog" alt="" data-toggle="modal" data-target="#knjiga10">
+                      <p class="knjigaNaslov mt-2">Vule Žurić</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k22.jpg" class="knjigaKatalog" alt="" data-toggle="modal" data-target="#knjiga11">
+                      <p class="knjigaNaslov mt-2">Ivan Ivačković</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k21.jpg" class="knjigaKatalog" alt="" data-toggle="modal" data-target="#knjiga12">
+                      <p class="knjigaNaslov mt-2">Anjes Marten-Ligan</p>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                
+                <div class="container">
+                  <div class="row redKnjiga">
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k20.jpg" class="knjigaKatalog" alt="" data-toggle="modal" data-target="#knjiga13">
+                      <p class="knjigaNaslov mt-2">Megan Goldin</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k19.jpg" class="knjigaKatalog" alt="" data-toggle="modal" data-target="#knjiga14">
+                      <p class="knjigaNaslov mt-2">Živojin Petrović</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k18.jpg" class="knjigaKatalog" alt="" data-toggle="modal" data-target="#knjiga15">
+                      <p class="knjigaNaslov mt-2">Dafni Kalotaj</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k17.jpg" class="knjigaKatalog" alt="" data-toggle="modal" data-target="#knjiga16">
+                      <p class="knjigaNaslov mt-2">Predrag Mitrović</p>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div> 
+  </div>        
+</div>
+
+
+<!-- Modal -->
+<div class="modal fade" id="knjiga9" tabindex="-1" role="dialog" aria-labelledby="knjiga9Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel9">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k24.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 790 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="modal fade" id="knjiga10" tabindex="-1" role="dialog" aria-labelledby="knjiga10Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel10">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k23.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 390 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga11" tabindex="-1" role="dialog" aria-labelledby="knjiga11Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel11">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k22.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 490 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga12" tabindex="-1" role="dialog" aria-labelledby="knjiga12Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel12">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k21.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 590 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga13" tabindex="-1" role="dialog" aria-labelledby="knjiga13Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel13">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k20.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 690 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga14" tabindex="-1" role="dialog" aria-labelledby="knjiga14Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel14">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k19.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 390 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga15" tabindex="-1" role="dialog" aria-labelledby="knjiga15Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel15">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k18.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 390 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga16" tabindex="-1" role="dialog" aria-labelledby="knjiga16Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel16">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k17.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 390 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--End Modal -->
+
+<div class="col-12 text-center">
+  <form action="">
+    <h3 class="mt-5 pt-3">Preporučite vašu omiljenu knjigu našim čitaocima</h3>
+    <p class="py-2">Vaše preporuke biće postavljene na naš sajt</p>
+    <div class="form-group d-flex justify-content-center">
+        <input type="text" class="form-control border-top-0 border-right-0 border-left-0 form-style form-width p-2" id="Naslovp1" placeholder="Ime knjige" required>
+      </div>
+      <div class="form-group d-flex justify-content-center">
+        <input type="text" class="form-control border-top-0 border-right-0 border-left-0 form-style form-width p-2" id="Imep        1" placeholder="Ime autora" required>
+      </div>
+      <button type="submit" class="btn btn-secondary border-0 pt-2">Preporučite</button>
+  </form>
+</div> 
+<div class="col-12 picture1 my-4">
+
+</div>
+<div id="maliKrin" class="offset my-5">
+      <div class="col-12 text-center">
+          <a class="carousel-control-prev" href="#carousel1Controls" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+          </a>               
+           <h3 class="heading">Mali Krin</h3>
+          <a class="carousel-control-next" href="#carousel1Controls" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          <div class="heading-underline"></div>
+      </div>
+
+      <div id="carousel1Controls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                
+                <div class="container">
+                  <div class="row redKnjiga">
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k9.jpg" class="knjigaKatalog"alt="" data-toggle="modal" data-target="#knjiga17">
+                      <p class="knjigaNaslov mt-2">Svemir</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k10.jpg" class="knjigaKatalog"alt="" data-toggle="modal" data-target="#knjiga18">
+                      <p class="knjigaNaslov mt-2">Ideje</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k11.jpg" class="knjigaKatalog"alt="" data-toggle="modal" data-target="#knjiga19">
+                      <p class="knjigaNaslov mt-2">Brojevi</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k12.jpg" class="knjigaKatalog"alt="" data-toggle="modal" data-target="#knjiga20">
+                      <p class="knjigaNaslov mt-2">Loši momci 4</p>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                
+                <div class="container">
+                  <div class="row redKnjiga">
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k13.jpg" class="knjigaKatalog"alt="" data-toggle="modal" data-target="#knjiga21">
+                      <p class="knjigaNaslov mt-2">Engleski</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k14.jpg" class="knjigaKatalog"alt="" data-toggle="modal" data-target="#knjiga22">
+                      <p class="knjigaNaslov mt-2">Bajke</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k15.jpg" class="knjigaKatalog"alt="" data-toggle="modal" data-target="#knjiga23">
+                      <p class="knjigaNaslov mt-2">Priče</p>
+                    </div>
+                    <div class="col-md-3 col-sm-12">
+                      <img src="images/k16.jpg" class="knjigaKatalog"alt="" data-toggle="modal" data-target="#knjiga24">
+                      <p class="knjigaNaslov mt-2">Loši momci 3</p>
+                
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+            </div>
+          </div> 
+  </div>        
+</div>
+
+
+
+<!-- Modal -->
+<div class="modal fade" id="knjiga17" tabindex="-1" role="dialog" aria-labelledby="knjiga17Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel17">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k9.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 390 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga18" tabindex="-1" role="dialog" aria-labelledby="knjiga18Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel18">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k10.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 390 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga19" tabindex="-1" role="dialog" aria-labelledby="knjiga19Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel19">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k11.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 390 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga20" tabindex="-1" role="dialog" aria-labelledby="knjiga20Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel20">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k12.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 350 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga21" tabindex="-1" role="dialog" aria-labelledby="knjiga21Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel21">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k13.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 370 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga22" tabindex="-1" role="dialog" aria-labelledby="knjiga22Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel22">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k14.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 320 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga23" tabindex="-1" role="dialog" aria-labelledby="knjiga23Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel23">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k15.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 390 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="knjiga24" tabindex="-1" role="dialog" aria-labelledby="knjiga24Label" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="naslovLabel24">Poručite knjigu</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-center">
+            <img class="modalKnjiga" src="images/k16.jpg" alt="book">
+
+          </div>
+          <div class="col-12 ">
+            <div class="modalStyle text-center">
+              <h6 class="py-2">Cena: 390 din</h6>
+              <h6 class="py-2">Izdavac: Krin</h6>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id in eius sed sunt quasi, laudantium rem libero commodi ad eveniet voluptates quibusdam numquam similique temporibus officiis et magni dolore. Atque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <a href="naruci.html" class="btn btn-secondary">Poruči</a>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Endbook Modal -->
+
+<div id="footer" class="offset">
+  <footer class="container-fluid py-3">
+          <div id="logo" class="col-12 text-center">
+              <a class="navbar-brand pl-5 pr-3 my-2 border border-right-0 border-1 footer-color-font" href="#">Krin</a>
+          </div>
+          <div class="row pt-5">
+              <div class="col-md-4 col-sm-12 text-center">
+                  <ul class="list-unstyled  text-left">
+                      <li class="border-left border-3 p-2">Kontakt</li>
+                      <li class="p-2 footer-color-font"><i class="fas fa-phone-alt pr-2"></i>+381 63678643</li>
+                      <li class="p-2 footer-color-font"><i class="fas fa-search-location pr-2"></i>Igmanska 10, Zvezdara, Beograd</li>
+                      <li class="p-2 footer-color-font"><i class="fas fa-envelope pr-2"></i>knjigeKrin@gmail.com</li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-sm-12 text-center">
+                  <ul class="list-unstyled text-left">
+                      <li class="border-left border-3 p-2">Ostale ekspoziture<i class="fas fa-map-marker-alt pl-2"></i></li>
+                      <li class="p-2 footer-color-font">Majke Jugovića 23, Kruševac </li>
+                      <li class="p-2 footer-color-font">Njegoševa 17, Niš</li>
+                      <li class="p-2 footer-color-font">Dostojevskog 56, Novi Sad</li>
+                  </ul>
+              </div>
+              <div class="col-md-4 col-sm-12 text-center">
+                  <div class="row">
+                      <div class="col-md-12">
+                          <ul class="list-inline text-center">
+                              <li class="list-inline-item border-left border-3 p-2 d-block">Društvene mreže i link kupona</li>
+                              <li class="list-inline-item p-2 pl-2"><a class="footer-color-font" href="https://sr-rs.facebook.com/" target="_blank"><i class="fa fa-facebook-square icons" aria-hidden="true"></i></a></li>
+                              <li class="list-inline-item p-2"><a class="footer-color-font" href="https://www.instagram.com/?hl=sr" target="_blank"><i class="fa fa-instagram icons" aria-hidden="true"></i></a></li>
+                              <li class="list-inline-item p-2"><a class="footer-color-font" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play icons" aria-hidden="true"></i></a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-md-12">
+                          <ul class="list-inline text-center">
+                              <li class="list-inline-item border-left border-3 p-2 d-block">Linkovi</li>
+                              <li class="list-inline-item p-2"><a class="footer-color-font" href="css/style.css" target="_blank">CSS</a></li>
+                              <li class="list-inline-item p-2"><a class="footer-color-font" href="sitemap.xml" target="_blank">SITEMAP</a></li>
+                          </ul>
+                      </div>
+                  </div>
+                  
+              </div>
+              
+          </div>
+          <div class="col-12 text-center border-top mt-5 d-flex justify-content-center">
+              <p class="lead pt-4 footer-color-font">All rights reserved, 2020, Dimitrijević Nikola &copy;</p>
+          </div>   
+          
+  </footer>
+</div>
+<script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script>
+    $('#myModal').on('shown.bs.modal', function () {
+     $('#myInput').trigger('focus')
+    });
+    $('.carousel').carousel({
+            interval: 7000
+        });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Izdavačka kuća Krin osnovana je maja 1998. godine. Od pocetka broj objavljenih naslova je bio svega nekoliko za godinu dana, a danas brojimo hiljade njih. Posetite nas i uverite se!">
+    <meta name="author" content="Nikola Dimitrijević"/>
+    <meta name="keywords" content="knjizara, knjige, citanje, literatura, biblioteka, prodavnica"/>
+    
+    <title>Knjižara | KRIN</title>
+
+    <script src="https://kit.fontawesome.com/9902428994.js"></script>
+
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+
+    <button type="button" class="btn ispred" id="chat" data-toggle="modal" data-target="#chatModal">
+        <i class="fas fa-comment-alt"></i>
+      </button>
+      
+      <!-- Modal -->
+      <div class="modal fade" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chatModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="chatModalLabel">Pošaljite poruku</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <!-- FORMA -->
+              <form>
+                <div class="form-group">
+                  <label for="Email">Email adresa</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="primer@gmail.com">
+                  <small id="emailHelp" class="form-text text-muted">Vaša email adresa neće biti otkrivena. Osećajte se bezbedno.</small>
+                </div>
+                <div class="form-group">
+                    <label for="ime">Ime i Prezime</label>
+                    <input type="text" class="form-control" id="ime" placeholder="Petar Petrović">
+                  </div>
+                  <div class="form-group">
+                    <label for="Poruka">Unesi poruku</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary">Pošaljite</button>
+              </form>
+              <!-- END FORMA -->
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+    <div id="home">
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+            <a class="navbar-brand pl-5 pr-3 border border-right-0" href="index.html">Krin</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item pr-2">
+                            <a class="nav-link aktivan pt-1" href="index.html">Naslovna</a>
+                        </li>
+                        <li class="nav-item pr-2">
+                            <a class="nav-link pt-1" href="knjige.html">Knjige</a>
+                        </li>
+                        <li class="nav-item pr-2">
+                            <a class="nav-link pt-1" href="naruci.html">Naručite</a>
+                        </li>
+                        <li class="nav-item pr-2">
+                            <a class="nav-link pt-1" href="oautoru.html">Autor</a>
+                        </li>
+                    </ul>
+                </div>
+        </nav>
+        <div class="landing">
+            <div class="home-wrap">
+                <div class="home-inner">
+
+                </div>
+            </div>
+        </div>
+        <div class="caption py-4 text-center">
+            <h1>Izdavačka kuća Krin</h1>
+            <h3 class="py-3">"Raj sam oduvek zamišljao kao svojevrsnu biblioteku."</h3>
+            <a class="btn btn-outline-light btn-lg" href="#footer">Pronadjite nas!</a>
+        </div>
+    </div>
+
+    <div id="sale" class="offset">
+        <div class="col-12 my-5 mx-auto text-center">
+            <h1 class="velicina">Naručite knjigu online</h1>
+            <p class="lead">Čekanje porudžbine maksimalno 5 dana</p>
+            <a class="btn btn-secondary btn-md border-0" href="naruci.html">Naručite</a>
+        </div>
+    </div>
+
+    <div id="ponuda">
+        <div class="jumbotron py-4 px-5 mb-0">
+            <div class="container my-4">
+                <div class="col-12 text-center">
+                    <h3 class="heading mb-3">Takodje u ponudi</h3>
+                    <div class="heading-underline"></div>
+                </div>
+                <div class="row text-center pt-3">
+                    <div class="col-md-4">
+                        <div class="pt-2">
+                            <i class="fas fa-pencil-ruler fa-4x pb-3" data-fa-transform="shrink-3 up-5"></i>
+                            <h3 class="pt-4 ponudaNaslov pb-2">Dečiji pribor</h3>
+                            <p class="pt-3 ponudaSlova">Veliki izbor olovaka, lenjira, fotrola kao i rančeva. Svakog 31. avgusta pre polaska u školu nudimo popuste na različite artikle. Veliki dijapazon pribora na jednom mestu.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pt-2">
+                            <i class="fas fa-book fa-4x pb-3" data-fa-transform="shrink-3 up-5"></i>
+                            <h3 class="pt-4 ponudaNaslov pb-2">Lektire</h3>
+                            <p class="pt-3 ponudaSlova">Svakog 1. septembra, prvacima delimo komplet lektira besplatno. Takodje u ponudi sve potrebne lektire za osnovce i srednjoškolce. </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="pt-2">
+                            <i class="fas fa-book-open fa-4x pb-3" data-fa-transform="shrink-3 up-5"></i>
+                            <h3 class="pt-4 ponudaNaslov pb-2">Sveske</h3>
+                            <p class="pt-3 ponudaSlova">Sve vrste svesaka kao i blokova za crtanje. Za kupovinu veće količine svesaka moguće je odloženo plaćanje. Nudimo i izradu svesaka sa aplikacijom po želji, posetite nas i uverite se.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="TopList" class="offset">
+        <div class="fixed-background">
+            <div class="dark">            
+            <div class="col-12 text-center fixedText pt-5">
+                    <h3 class="heading my-3 mt-2">Bestseleri proslog meseca</h3>
+                    <div class="heading-underline"></div>
+            </div>
+            <div class="row container-fluid text-center fixedText">
+                <div class="col-md-4">
+                    <h3 class="my-3">#1</h3>
+                    <div class="feature">
+                        <img src="images/top3.jpg" alt="book 1">
+                    </div>
+                    <p class="lead mt-2">867 primeraka</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="my-3">#2</h3>
+                    <div class="feature">
+                        <img src="images/top2.jpg" alt="book 2">
+                    </div>
+                    <p class="lead mt-2">649 primeraka</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="my-3">#3</h3>
+                    <div class="feature">
+                        <img src="images/top1.jpg" alt="book 3">
+                    </div>
+                    <p class="lead mt-2">436 primeraka</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    </div>
+
+    <div id="Komentari" class="offset">
+        <div class="jumbotron">
+            <div class="col-12 text-center">
+                <a class="carousel-control-prev" href="#carouselKomentariControls" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>                <h3 class="heading">Komentari</h3>
+                <a class="carousel-control-next" href="#carouselKomentariControls" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                  </a>
+                <div class="heading-underline"></div>
+            </div>
+
+            <div id="carouselKomentariControls" class="carousel slide py-2" data-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-6 clients">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/portret1.jpg" alt="client portret"/>
+                                </div>
+                                <div class="col-md-8">
+                                    <blockquote class="pt-5 pb-3">                                        
+                                        <p><i class="fas fa-quote-left pr-2"></i>Kada je u pitanju tematika izdanja domaćih izdavača, nije me lako pridobiti. U ovom slučaju uzajamno poverenje Krina i mene traje dugo. Iz tog razloga su knjige izdavačke kuće "Krin" postale deo moje svakodnevice čemu sam izuzetno zahvalan.</p>
+                                        <hr class="clients-hr">
+                                        <cite>&#8212; Vojin Ćetković, Glumac</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 clients">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/portret2.jpg" alt="client portret"/>
+                                </div>
+                                <div class="col-md-8">
+                                    <blockquote class="pt-5 pb-3">                                        
+                                        <p><i class="fas fa-quote-left pr-2"></i>Može se reći da pripadam staroj gardi jer za mene štampano izdanje uvek više vredi, zbog toga sam se opredelila za izdanja Krina, odgovaraju mom poimanju kvaliteta i trajanja.</p>
+                                        <hr class="clients-hr">
+                                        <cite>&#8212; Vesna Trivalić, Glumica</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-6 clients">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/portret3.jpg" alt="client portret"/>
+                                </div>
+                                <div class="col-md-8">
+                                    <blockquote class="pt-5 pb-3">                                        
+                                        <p><i class="fas fa-quote-left pr-2"></i>Sve pohvale za Krin, pronašla sam izdanja domaćih klasika na engleskom jeziku. Obezbedila sam siguran i izuzetan poklon prijateljima koji ne žive u Srbiji i ne govore srpski jezik.</p>
+                                        <hr class="clients-hr">
+                                        <cite>&#8212; Milica Aksentijević</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 clients">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <img src="images/portret4.jpg" alt="client portret"/>
+                                </div>
+                                <div class="col-md-8">
+                                    <blockquote class="pt-5 pb-3">                                        
+                                        <p class="inline"><i class="fas fa-quote-left pr-2"></i>Krin poseduje odredjenu čaroliju. I ono što trenutno nemaju pronalaze i to u vrlo kratkom roku, ma koliko moje želje bile maštovite i sezale u prošlost - tu su da pomognu i obezbede. Uživanje je čitati njihove naslove i nalaziti retka izdanja.</p>
+                                        <hr class="clients-hr">
+                                        <cite>&#8212; Milan Ranković</cite>
+                                    </blockquote>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              </div> 
+        </div>        
+    </div>
+
+    <div class="col-12 my-5 mx-auto text-center">
+        <h3>Katalog knjiga koje preporučuju naši čitaoci</h3>
+        <a class="btn btn-secondary btn-md mt-4 border-0" href="knjige.html">Katalog</a>
+    </div>
+
+    <div id="footer" class="offset">
+        <footer class="container-fluid py-3">
+                <div id="logo" class="col-12 text-center">
+                    <a class="navbar-brand pl-5 pr-3 my-2 border border-right-0 border-1 footer-color-font" href="#">Krin</a>
+                </div>
+                <div class="row pt-5">
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <ul class="list-unstyled  text-left">
+                            <li class="border-left border-3 p-2">Kontakt</li>
+                            <li class="p-2 footer-color-font"><i class="fas fa-phone-alt pr-2"></i>+381 63678643</li>
+                            <li class="p-2 footer-color-font"><i class="fas fa-search-location pr-2"></i>Igmanska 10, Zvezdara, Beograd</li>
+                            <li class="p-2 footer-color-font"><i class="fas fa-envelope pr-2"></i>knjigeKrin@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <ul class="list-unstyled text-left">
+                            <li class="border-left border-3 p-2">Ostale ekspoziture<i class="fas fa-map-marker-alt pl-2"></i></li>
+                            <li class="p-2 footer-color-font">Majke Jugovića 23, Kruševac </li>
+                            <li class="p-2 footer-color-font">Njegoševa 17, Niš</li>
+                            <li class="p-2 footer-color-font">Dostojevskog 56, Novi Sad</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12 text-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-inline text-center">
+                                    <li class="list-inline-item border-left border-3 p-2 d-block">Društvene mreže i link kupona</li>
+                                    <li class="list-inline-item p-2 pl-2"><a class="footer-color-font" href="https://sr-rs.facebook.com/" target="_blank"><i class="fa fa-facebook-square icons" aria-hidden="true"></i></a></li>
+                                    <li class="list-inline-item p-2"><a class="footer-color-font" href="https://www.instagram.com/?hl=sr" target="_blank"><i class="fa fa-instagram icons" aria-hidden="true"></i></a></li>
+                                    <li class="list-inline-item p-2"><a class="footer-color-font" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play icons" aria-hidden="true"></i></a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <ul class="list-inline text-center">
+                                    <li class="list-inline-item border-left border-3 p-2 d-block">Linkovi</li>
+                                    <li class="list-inline-item p-2"><a class="footer-color-font" href="css/style.css" target="_blank">CSS</a></li>
+                                    <li class="list-inline-item p-2"><a class="footer-color-font" href="sitemap.xml" target="_blank">SITEMAP</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="col-12 text-center border-top mt-5 d-flex justify-content-center">
+                    <p class="lead pt-4 footer-color-font">All rights reserved, 2020, Dimitrijević Nikola &copy;</p>
+                </div>                 
+        </footer>
+    </div>
+    <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        $('#myModal').on('shown.bs.modal', function () {
+         $('#myInput').trigger('focus')
+        });
+        $('.carousel').carousel({
+            interval: 7000
+        })
+    </script>
+</body>
+</html>

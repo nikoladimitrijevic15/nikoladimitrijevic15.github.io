@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="description" content="Izdavačka kuća Krin osnovana je maja 1998. godine. Od pocetka broj objavljenih naslova je bio svega nekoliko za godinu dana, a danas brojimo hiljade njih. Posetite nas i uverite se!"/>
+    <meta name="author" content="Nikola Dimitrijević"/>
+    <meta name="keywords" content="knjizara, knjige, citanje, literatura, biblioteka, prodavnica"/>
+    
+    <title>Knjižara | KRIN</title>
+
+    <script src="https://kit.fontawesome.com/9902428994.js"></script>
+
+    <link rel="shortcut icon" href="images/logo.png"/>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+
+<body data-spy="scroll" data-target="#navbarResponsive">
+
+    <button type="button" class="btn ispred" id="chat" data-toggle="modal" data-target="#chatModal">
+        <i class="fas fa-comment-alt"></i>
+    </button>
+      
+   <!-- Modal Poruka-->
+    <div class="modal fade" id="chatModal" tabindex="-1" role="dialog" aria-labelledby="chatModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="chatModalLabel">Pošaljite poruku</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="Email">Email adresa</label>
+                <input type="email" class="form-control" id="modalEmail" aria-describedby="emailHelp" placeholder="primer@gmail.com">
+                <small id="emailHelp" class="form-text text-muted">Vaša email adresa neće biti otkrivena. Osećajte se bezbedno.</small>
+              </div>
+              <div class="form-group">
+                <label for="ime">Ime i Prezime</label>
+                <input type="text" class="form-control" id="modalIme" placeholder="Petar Petrović">
+              </div>
+                <div class="form-group">
+                  <label for="Poruka">Unesite poruku</label>
+                  <textarea class="form-control" id="modalText" rows="3"></textarea>
+                </div>
+              <button type="submit" class="btn btn-primary">Pošaljite</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Modal Poruka-->
+
+      <!-- Navigacija-->
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top">
+        <a class="navbar-brand pl-5 pr-3 border border-right-0" href="index.html">Krin</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item pr-2">
+                        <a class="nav-link pt-1" href="index.html">Naslovna</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link pt-1" href="knjige.html">Knjige</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link aktivan pt-1" href="naruci.html">Naručite</a>
+                    </li>
+                    <li class="nav-item pr-2">
+                        <a class="nav-link pt-1" href="oautoru.html">Autor</a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+        <!-- End Navigacija-->
+
+        <!-- Naslov i slika-->
+        <div class="col-12 text-center">
+            <h3 class="heading mt-5 pt-5">Naručite online</h3>
+            <div class="heading-underline"></div>
+        </div>
+        <div class="col-12 picture my-3">
+
+        </div>
+        <!-- End Naslov i slika-->
+
+        <!-- Naruci tekst i forma-->
+        <div class="container text-center">
+          <div class="row pt-5">
+              <div class="col-md-6">
+                  <ul class="list-unstyled text-left">
+                      <li class="p-3 border-2 border-left">Informacije vezane za naručivanje <i class="fas fa-level-down-alt"></i></li>
+                      <li class="pt-3 px-2 pb-2">Nakon naručivanja, proverite mail da biste saznali vreme isporuke</li>
+                      <li class="pt-3 px-2 pb-2">Slanje knjiga se vrši bryom poštom</li>
+                      <li class="pt-3 px-2 pb-2">Poštarina košta 120RSD</li>                
+                      <li class="pt-3 px-2 pb-2">Na više poručenih knjiga poštarina ostaje ista</li>
+                      <li class="pt-3 px-2 pb-2">U slučaju greške, kontaktirajte nas telefonom i porudžbina će biti otkazana </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                    <form>
+                        <div class="form-group">
+                          <input type="text" class="form-control border-top-0 border-right-0 border-left-0 form-style my-3" id="inputAddress" placeholder="Naslov knjige" required>
+                        </div>
+                        <div class="form-group">
+                          <input type="text" class="form-control border-top-0 border-right-0 border-left-0 form-style my-3" id="inputAddress2" placeholder="Pisac" required>
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <input type="email" class="form-control border-top-0 border-right-0 border-left-0 form-style my-3" id="inputEmail4" placeholder="email@gmail.com" required>
+                            </div>
+                            <div class="form-group col-md-6">                      
+                              <input type="text" class="form-control border-top-0 border-right-0 border-left-0 form-style my-3" id="inputPassword4" placeholder="Ime i Prezime" required>
+                            </div>
+                          </div>
+                        <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <input type="text" class="form-control border-top-0 border-right-0 border-left-0 form-style my-3" id="inputCity" placeholder="Ulica, broj, grad" required>
+                            </div>
+                            <div class="form-group col-md-6">            
+                              <input type="text" class="form-control border-top-0 border-right-0 border-left-0 form-style my-3" id="inputZip" placeholder="37000" required>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-secondary border-0 pt-2">Naručite</button>
+                      </form>
+                </div>
+            </div>
+        </div>
+        <!-- End Naruci tekst i forma-->
+
+        <!-- Preporuci forma-->
+        <div class="col-12 text-center">
+          <form action="">
+            <h3 class="mt-5 pt-3">Preporučite vašu omiljenu knjigu našim čitaocima</h3>
+            <p class="py-2">Vaše preporuke biće postavljene na naš sajt</p>
+            <div class="form-group d-flex justify-content-center">
+                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 form-style form-width p-2" id="Naslovp1" placeholder="Ime knjige" required>
+              </div>
+              <div class="form-group d-flex justify-content-center">
+                <input type="text" class="form-control border-top-0 border-right-0 border-left-0 form-style form-width p-2" id="Imep        1" placeholder="Ime autora" required>
+              </div>
+              <button type="submit" class="btn btn-secondary border-0 pt-2">Preporučite</button>
+          </form>
+        </div>
+        <!--End Preporuci forma-->
+
+        <!-- Footer-->
+        <div id="footer" class="offset">
+          <footer class="container-fluid py-3">
+                  <div id="logo" class="col-12 text-center">
+                      <a class="navbar-brand pl-5 pr-3 my-2 border border-right-0 border-1 footer-color-font" href="#">Krin</a>
+                  </div>
+                  <div class="row pt-5">
+                      <div class="col-md-4 col-sm-12 text-center">
+                          <ul class="list-unstyled  text-left">
+                              <li class="border-left border-3 p-2">Kontakt</li>
+                              <li class="p-2 footer-color-font"><i class="fas fa-phone-alt pr-2"></i>+381 63678643</li>
+                              <li class="p-2 footer-color-font"><i class="fas fa-search-location pr-2"></i>Igmanska 10, Zvezdara, Beograd</li>
+                              <li class="p-2 footer-color-font"><i class="fas fa-envelope pr-2"></i>knjigeKrin@gmail.com</li>
+                          </ul>
+                      </div>
+                      <div class="col-md-4 col-sm-12 text-center">
+                          <ul class="list-unstyled text-left">
+                              <li class="border-left border-3 p-2">Ostale ekspoziture<i class="fas fa-map-marker-alt pl-2"></i></li>
+                              <li class="p-2 footer-color-font">Majke Jugovića 23, Kruševac </li>
+                              <li class="p-2 footer-color-font">Njegoševa 17, Niš</li>
+                              <li class="p-2 footer-color-font">Dostojevskog 56, Novi Sad</li>
+                          </ul>
+                      </div>
+                      <div class="col-md-4 col-sm-12 text-center">
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <ul class="list-inline text-center">
+                                      <li class="list-inline-item border-left border-3 p-2 d-block">Društvene mreže i link kupona</li>
+                                      <li class="list-inline-item p-2 pl-2"><a class="footer-color-font" href="https://sr-rs.facebook.com/" target="_blank"><i class="fa fa-facebook-square icons" aria-hidden="true"></i></a></li>
+                                      <li class="list-inline-item p-2"><a class="footer-color-font" href="https://www.instagram.com/?hl=sr" target="_blank"><i class="fa fa-instagram icons" aria-hidden="true"></i></a></li>
+                                      <li class="list-inline-item p-2"><a class="footer-color-font" href="https://www.youtube.com/" target="_blank"><i class="fa fa-youtube-play icons" aria-hidden="true"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="row">
+                              <div class="col-md-12">
+                                  <ul class="list-inline text-center">
+                                      <li class="list-inline-item border-left border-3 p-2 d-block">Linkovi</li>
+                                      <li class="list-inline-item p-2"><a class="footer-color-font" href="css/style.css" target="_blank">CSS</a></li>
+                                      <li class="list-inline-item p-2"><a class="footer-color-font" href="sitemap.xml" target="_blank">SITEMAP</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          
+                      </div>
+                      
+                  </div>
+                  <div class="col-12 text-center border-top mt-5 d-flex justify-content-center">
+                      <p class="lead pt-4 footer-color-font">All rights reserved, 2020, Dimitrijević Nikola &copy;</p>
+                  </div>   
+                  
+          </footer>
+      </div>
+        <!-- End Footer-->
+
+
+        <script src="bootstrap/js/jquery-3.3.1.min.js"></script>
+        <script src="bootstrap/js/bootstrap.min.js"></script>
+</body>
+</html>
