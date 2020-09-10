@@ -306,13 +306,6 @@ footer #logo a:hover{
     margin-top: 3rem;
 }
 @media screen and (max-width: 992px){
-    .imgmargin{
-        margin-top: 3rem;
-    }
-    .imgcenter{
-        display: flex;
-        justify-content: center;
-    }
     .fontLogo{
         margin-left: 0;
     }
