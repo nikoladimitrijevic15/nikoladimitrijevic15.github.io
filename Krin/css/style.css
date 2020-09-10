@@ -312,6 +312,9 @@ footer #logo a:hover{
     .modalStyle{
         text-align: center;
     }
+    .imgmargin{
+        margin-top: 3rem;
+    }
 }
 @media screen and (max-width: 767px){
     .caption h1{
@@ -353,6 +356,12 @@ footer #logo a:hover{
     }
     .form-width{
         width: 60%;
+    }
+}
+@media screen and (max-width: 600px){
+    .imgCenter{
+        display: flex;
+        justify-content: center;
     }
 }
 @media screen and (max-width: 575px){
