@@ -1,0 +1,365 @@
+
+html{
+	scroll-behavior:smooth
+}
+body{
+	color:#fff;
+	font:2px;
+	font-family:'Varela Round',sans-serif;
+}
+.navbar-light .navbar-nav .nav-link{
+	color: #4d2600;
+		}
+.navbar-light .navbar-nav .nav-link:hover{
+	
+}
+.navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link{
+		color: #4d2600;
+}
+.navbar-light .navbar-toggler{
+		border-color: #4d2600;
+		background-color: #ffd480;
+		}
+.containerMeni{
+	background-color: #ffd480;
+	box-shadow: 0px 8px 9px -2px rgba(0,0,0,0.57);
+	}
+.meniLi{
+	color: #4d2600;
+	}
+.meniLi:hover{
+		  transform: scale(1.1, 1.1);
+		  transition: 0.3s;
+	}
+@media screen and (max-width:575px){
+	.izmena2{display:none}
+	.okvir i{width:70%}
+	.divovi{max-width:90%}}
+	i.material-icons{color:#7c5295;font-size:16px}
+	.logo{
+		height:50px;
+	}
+	#slika{
+		width:inherit;
+		max-height:660px;
+		clip-path: ellipse(120% 100% at 50% 0);
+	}
+	.apsolutnaPoz{
+		top:33%;text-align:center;z-index:3;
+	}
+	.dark{
+		background-color:rgba(0,0,0,.7);
+		width:100%;
+		height:100%;
+		top:0;
+		z-index:2;
+		clip-path:ellipse(120% 100% at 50% 0)}
+	.precice{
+				display:inline-block;
+				background-color: #ffd480;
+				box-shadow: 0px 0px 4px 4px rgba(0,0,0,0.57);
+				color: #4d2600;
+				width:15%;
+				font-size:18px;
+				border-radius:10px;
+			}
+	.precice:hover{
+		color: #fff;
+	}
+	.logo{
+		font-family:"Gloria Hallelujah",cursive;
+		font-size: 25px;
+		font-weight: bold;
+	}
+	#naslov{
+		color: #ffd480;
+		font-family:"Gloria Hallelujah",cursive
+		}
+	.slova{
+		color: #4d2600;
+	}
+	.okvir h3{
+		background-color: #4d2600;
+		color:#fff;
+		width: fit-content;
+		border-radius: 10px;
+		padding: 7px;
+		font-size:20px;
+	}
+	.strks{
+		padding-left: 5px; 
+		color:#4d2600;
+		font-family:"Gloria Hallelujah",cursive;
+	}
+	@media screen and (max-width:1127px){
+		.apsolutnaPoz h1{
+			font-size:30px
+		}
+		.apsolutnaPoz{
+			top:30%
+		}
+		.precice{
+			font-size:15px
+		}}
+		@media screen and (max-width:910px){
+			.precice{
+				padding:10px!important;
+				margin-top:10px;
+				height:10%;
+			}
+			.apsolutnaPoz{
+				top:35%
+			}
+			.apsolutnaPoz p{
+				display:none
+			}}
+		@media screen and (max-width:830px){
+			.precice{
+				width:30%
+			}
+			.precice:first-child{
+				display:none;
+			}}
+		@media screen and (max-width:576px){
+			.novo3{
+				display:none!important;
+			}}
+		@media screen and (max-width:696px){
+			.apsolutnaPoz h1{
+				font-size:25px
+			}}
+		@media screen and (max-width:588px){
+			.apsolutnaPoz{
+				top:37%
+			}
+			.apsolutnaPoz .precice{
+				display:none;
+			}}
+		@media screen and (max-width:383px){
+			.apsolutnaPoz h1{
+				font-size:20px;
+			}}
+		@media screen and (max-width:316px){
+			.apsolutnaPoz{
+				top:32%;
+			}}
+		@media screen and (max-width:289px){
+			.apsolutnaPoz h1{
+				display:none;
+			}}
+			
+			.bojaOffer{
+				background-color: #ffd480;
+				color: #4d2600;
+				width: inherit;
+			}
+			.offer i{
+				padding:20px;
+				color:#4d2600;
+				font-size: 60px;
+				border:1px solid #4d2600;
+				border-radius:0px;
+				width: 150px;
+				box-shadow: 1px 3px 4px -1px rgba(0,0,0,0.57);
+			}
+			.offer i:hover{
+				transform: scale(1.03,1.03);
+				transition: 0.2s;
+				box-shadow: 3px 5px 6px -1px rgba(0,0,0,0.57);
+			}
+			.senka{
+				box-shadow: 3px 5px 6px -1px rgba(0,0,0,0.57);
+			}
+			.weProvideOpposite i{
+				border-radius:50px;
+				font-size:30px;
+				padding:20px;
+				color:#7c5295;
+				background-color:#fff;
+				border:1px solid #fff;
+			}
+			.suggestion{
+				color:#4d2600;
+			}
+			.fa-mars,.fa-venus{padding:7px 0 5px 1px;margin:10px 0 20px 0;margin-bottom:2px;font-size:25px;height:40px;width:40px;color:#fff;background-color:#7c5295;border-radius:70px}
+			.kartica{
+				color:#4d2600;
+				border-top:1px solid rgba(124,82,149,.3);
+				width:100%;
+				display:block;
+				height:55px;
+				margin-top: 10px;
+				border-radius:0 0 10px 10px;
+				padding-top: 15px;
+			}
+			.divovi{box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);border-radius:10px;padding:0;margin-bottom:55px!important;max-width:23%}
+			.divovi img{width:100%;border-radius:10px 10px 0 0}
+			.divovi h3{width:100%;font-family:"Gloria Hallelujah",cursive!important;color:#464646!important}
+			.d{width:90%}
+			@media screen and (max-width:991px){
+				.divovi{max-width:46%}
+				.izmene li:nth-child(2){margin-left:0!important}
+				}
+			@media screen and (max-width:767px){
+					.divovi{max-width:90%}}
+					.cena{
+						color:#4d2600;
+						text-align: center;
+					}
+					.naslov{
+						color:#4d2600;
+					}
+					.visina{
+						min-height: 200px;
+					}
+					.futerContainer{
+						border-top: 1px solid #4d2600;
+						background-color:#ffd480;
+						height:auto;
+					}
+					.listaFuter li{
+						margin-top:10px;
+						background-color:#fff;
+						width: 60px;
+						height: 40px;
+
+					}
+					.listaFuter li a{
+						color:#4d2600;
+					}
+					.listaFuter li a i{
+						font-size: 22px;
+						padding-top:12px;
+					}
+					.listaFuter{
+						padding:15px;
+					}
+					.caption{
+						font-size: 2rem;
+					}
+
+				@media screen and (max-width:317px){
+					.listaFuter li{
+						width:40px;
+						height:40px;
+					}
+					.listaFuter li a i{
+						padding-top:10px;
+					}}
+
+				@media screen and (max-width:575px){
+					.pP{order:2}}
+				@media screen and (max-width:991px){
+					.pP{
+						padding-bottom:10px
+					}}
+
+					.formaStyle{
+						color:#4d2600;
+						min-height:400px;
+					}
+					.form-control,textarea{
+						background-color: #ffd480;
+						color:#4d2600;
+						border:1px solid #4d2600;
+					}
+					.form-control:focus, textarea:focus{
+							background-color: #ffd480;
+							color:#4d2600;
+							border: 1px solid #ffd480;
+						}
+					.form-control:hover, textarea:hover{
+						cursor: pointer;
+					}
+					.form-control::placeholder,textarea::placeholder{
+						color:#4d2600;
+					}
+					.bojaKlik{
+						background-color:#4d2600;
+					}
+					.bojaKlik:focus{
+						background-color:#4d2600;
+					}
+					.btn:focus,.form-control:focus{
+						border-color:inherit;
+						-webkit-box-shadow:none;
+						box-shadow:none;
+					}
+					.btn{
+						background-color:#fff;
+						color:#4d2600;
+						border:2px solid #4d2600;
+					}
+					.btn:hover{
+						background-color:#4d2600;
+						color:#fff;
+						border:2px solid #fff;
+					}
+					.skriven{
+						display:none;
+					}
+					.greska{
+						color:red;
+					}
+					.specialCoffe{
+						background-color: #ffd480;
+						color: #4d2600;
+						min-height:300px;
+						clip-path:ellipse(120% 100% at 50% 0);
+					}
+					.spanOffer{font-family:"Gloria Hallelujah",cursive;text-transform:uppercase}
+					.spanOffer:first-child a{text-transform:lowercase;color:#fff;text-decoration:underline}
+					.specialImg{
+						width:100%;
+						height:90%
+					}
+					.slika a img{
+						width:200px;
+						height:200px
+					}
+					.paddingSvi{
+						padding-top: 60px;
+					}
+					.linkSlika img{
+						width:100%!important;height:100%!important;
+					}
+					.apsolutni{
+						position:absolute;
+						top:0;
+						left:0;
+						width:100%;
+						height:84%;
+						background-color:#ffd480;
+						display:block !important;
+						z-index:4;
+						border-radius:10px 10px 0 0;
+						overflow:scroll;
+					}
+					a .slicica{
+						width:90%;
+						margin-bottom: 5px;
+						}
+					.bojaSlova{color:#7c5295}
+					@media screen and (max-width:991px){
+						.apsolutni{
+							height:86%;
+						}
+					}
+					@media screen and (max-width:767px){
+						.apsolutni{
+							height:88%;
+						}
+					}
+					@media screen and (max-width:435px){
+						.apsolutni{
+							height:84%;
+						}
+					}
+					@media screen and (max-width:249px){
+						.apsolutni{
+							display:none;
+						}
+						.kartica{
+							display:none;
+						}
+					}
