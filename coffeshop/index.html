@@ -26,7 +26,6 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-
     <!-- Meni -->
     <div id="home" class="container-fluid containerMeni sticky-top">
         <div class="container">
@@ -86,11 +85,11 @@
 
     <div id="coffee" class="container-fluid paddingSvi mb-2">
         <div class="row">
-            <div class="col-lg-12">
-                <h2 class="catLetters text-center mb-4">Our suggestion</h2>
+            <div class="col-sm-12">
+                <h2 class="text-center mb-4 slova pb-3">Our suggestion</h2>
             </div>
         </div>
-        <div class="row d-flex justify-content-around text-center div"></div>
+        
         <div class="row d-flex justify-content-around text-center div" data-aos="fade-right"></div>        
     </div>
 
@@ -169,74 +168,42 @@
                 <img src="images/offer1.png" class="specialImg senka" />
             </div>
         </div>
-        <div class="row shelter">
-        </div>
-        <div class="row shelter">
-            </div>
+
     </div>
     </div>
 
         
     <!--Forma -->
-    <div id="forma" class="container mb-5 paddingSvi">
-        <div class="row">
-            <div class="col-lg-12 slova">
-                <h2 class="text-center mb-3">Reserve your table</h2>
-                <p class="mb-4"> Fill the form and reserve your table, come to see whats the taste of real coffee. </p>
-            </div>
-        </div>
-        <form class="formaStyle" autocomplete="off" data-aos="zoom-in-down">
-            <div class="form-row">
-                    <div class="form-group promeniCol col-md-12">
-                    <label for="reason">How many tables? 4 people/table</label>
-                    <select id="reason" class="form-control">
-                        <option value="0" selected="selected">Choose...</option>
-                        <option value="1">1</option>
-                        <option value="2">2</option>
-                        <option value="3">3</option>
-                    </select>
-                    <span></span>
-                    </div>
-                    <div class="form-group col-md-6 sk skriven">
-                    <label for="adopt">Whom do you want to adopt:</label>
-                        <select id="adopt" class="form-control">
-                        </select>
-                        <span></span>
-                    </div>
-                </div>
-        <div class="form-row">
-            <div class="form-group col-md-6">
-            <label for="inputEmail4">First name</label>
-            <input type="text" class="form-control" id="FirstName" placeholder="John">
-            <span></span>
-            </div>
-            <div class="form-group col-md-6">
-            <label for="inputPassword4">Last name</label>
-            <input type="text" class="form-control" id="LastName" placeholder="Travolta">
-            <span></span>
-            </div>
-        </div>
+<div class="col-sm-12">
+    <h2 class="text-center mt-5 mb-5 slova">Reserve your table</h2>
+    <form id="forma" class="formaStyle">
         <div class="form-group">
-            <label for="email">E-mail</label>
-            <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
-            <span></span>
-        </div>
+            <label for="name">Your name</label>
+            <input type="text" class="form-control" id="name" placeholder="John">
+            <p class="errorHidden">Ne valja ti input</p>
+          </div>
+          <div class="form-group">
+            <label for="lastname">Your last name</label>
+            <input type="text" class="form-control" id="lastname" placeholder="Travolta">
+            <p class="errorHidden">Ne valja ti input</p>
+          </div>
+
         <div class="form-group">
-            <label for="textArea">Message</label>
-            <textarea class="form-control" id="textArea" rows="3"></textarea>
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" placeholder="name@example.com">
+          <p class="errorHidden">Ne valja ti input</p>
         </div>
-        <div class="form-group sk skriven">
-            <div class="form-check">
-            <p class="mb-1"> You have a chance to spend a day with our cats! </p>    
-            <input class="form-check-input" type="checkbox" id="checkMe">
-            <label class="form-check-label" for="checkMe">
-                Sign me in
-            </label>
-            </div>
+
+        <div class="form-group">
+          <label for="numberOfPeople">Number of People</label>
+          <input type="number" class="form-control" id="numberOfPeople" placeholder="0">
+          <p class="errorHidden">Ne valja ti input</p>
+
         </div>
-        <button type="button" id="dugme" class="btn btn-primary mb-1">Send a message</button>
-        </form>
-    </div>
+        <button class="btn my-5">Make reservation</button>
+      </form>
+</div>
+
     <!--Footer -->
 
     <div class="container-fluid futerContainer">
@@ -253,7 +220,7 @@
                 <span class="strks caption">Strks coffee &reg; </span>
             </div>
             <div class="col-sm-12 col-md-4">
-                <ul class="list-unstyled  text-left pt-5">
+                <ul class="list-unstyled  text-center pt-5">
                             <li class="p-2 slova"><i class="fas fa-search-location pr-2"></i>Knez Mihajlova 26, Dorcol, Beograd</li>
                             <li class="p-2 slova"><i class="fas fa-search-location pr-2"></i>Igmanska 10, Zvezdara, Beograd</li>
                             <li class="p-2 slova"><i class="fas fa-search-location pr-2"></i>Dunavska 34, Dorcol, Beograd</li>
@@ -261,8 +228,10 @@
             </div>
         </div>
         <div class="row d-flex justify-content-between align-items-center">
-            <div class="col-lg-4 order-md-2 order-sm-2 pP text-center mb-0">
-                <p class="m-0"> Copyright &copy; Nikola Dimitrijević 2020 </p>
+            <div class="col-lg-4 order-md-2 order-sm-2 pFooter text-center mb-0">
+                <a href="https://nikoladimitrijevic15.github.io/Portfolio/index.html" target="_blank">
+                     <p class="m-0 slova"> Copyright &copy; Nikola Dimitrijević 2020 </p>
+                </a>
             </div>
             <div class="col-lg-4 col-md-6 col-sm-6 text-center" id="social"> 
             </div>
@@ -279,8 +248,12 @@
 
         <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="js/main.js"></script>
+        <script src="js/formValidation.js"></script>
 </body>
 </html>
+
+
+
 
 
 

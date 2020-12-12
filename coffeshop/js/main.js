@@ -26,7 +26,7 @@ window.onload=function(){
 						e[2].firstElementChild.firstElementChild.innerHTML="now".toUpperCase();
 
 
-			var c=["Jamaican coffee","Turkish coffee","Colombian coffee","Kopi Luwak"],
+			var c=["Jamaican","Turkish","Colombian","Kopi Luwak"],
 			price=["4 e/cup","3 e/cup","3.5 e/cup","7 e/cup"],
 			imgName=["kafa1","kafa2","kafa3","kafa4"],
 			altImg=["Jamaican coffee","Turkish coffee","Colombian coffee","Kopi Luwak coffee"],
@@ -37,14 +37,15 @@ window.onload=function(){
 			y=document.getElementsByClassName("div");
 			for(let e=0; e < c.length; e++){
 				var v=document.createElement("div");
-				v.classList.add("col-lg-3","divovi","col-md-6","col-sm-12","position-relative"),
+				v.classList.add("col-lg-3","divovi","col-md-12","position-relative"),
 				v.setAttribute("data-aos","fade-right"),
 			v.innerHTML+=`<img class="visina" src="images/${imgName[e]}.jpg" class="img-responsive" alt="${altImg[e]}" /></a>\n`,
 			v.innerHTML+=`<span class="cena">${price[e]}</span>`,
 			v.innerHTML+=`<h3 class="text-center mt-3">${c[e]}</h3>`,
 			v.innerHTML+='<a href="#" class="text-decoration-none kartica text-uppercase"> Read more </a>',
 			v.innerHTML+=`<div class="d-none slova"> <h3 class="mt-3 mb-3">${c[e]}</h3> <p class="pl-2 pr-2">${rdm[e]} </p>`,
-			e>=4 ? y[1].appendChild(v) : y[0].appendChild(v)}
+			e>=4 ? y[1].appendChild(v) : y[0].appendChild(v)
+		}
 			
 			var w=['<i class="fab fa-facebook-square"></i>','<i class="fab fa-instagram"></i>','<i class="fab fa-linkedin"></i>'],
 				k=["https://www.facebook.com","https://www.instagram.com","https://linkedin.com"],
@@ -64,64 +65,35 @@ window.onload=function(){
 				document.getElementById("files").appendChild(j);
 			
 			for(let e=0; e < L.length; e++)
-				document.querySelector("#files ul").innerHTML+=2==e?`<li>\n <a target="_blank" href="${M[e]}" class="text-decoration-none popup-modal">\n${L[e]}\n</a>\n</li>`:`<li>\n                            <a target="_blank" href="${M[e]}" class="text-decoration-none">\n                                ${L[e]}\n                            </a>\n                      </li>`;
-			//---------------------------------------------------
-			var C=document.getElementById("adopt");
-				C.innerHTML+='<option value="0" selected> Choose... </option>';
-			for(let e=0; e < c.length; e++)
-				C.innerHTML+=`<option value="${e+1}"> ${c[e]} </option>`;
+				document.querySelector("#files ul").innerHTML+=2==e?`<li>\n <a target="_blank" href="${M[e]}" class="text-decoration-none popup-modal">\n${L[e]}\n</a>\n</li>`:`<li>\n<a target="_blank" href="${M[e]}" class="text-decoration-none">\n${L[e]}\n</a>\n</li>`;
+					$(document).ready(function(){
+						$(".listaFuter li a i").hover(
+							function(){
+								$(this).stop(!0,!0).animate({fontSize:"+=4px",paddingTop:"-=2px"},100)},
+							function(){
+								$(this).stop(!0,!0).animate({fontSize:"-=4px",paddingTop:"+=2px"},100)}),			
+						$("#here").click(function(){
+							$("#tables").val("2").change(),
+							$(".sk").removeClass("skriven"),
+							$(".promeniCol").removeClass("col-md-12").addClass("col-md-6")});
+					var e=0;
+					$(".kartica").click(
+						function(a){
+							a.preventDefault(),
+							++e%2==1?($(this).next().addClass("apsolutni"),$(this).text("Close")):($(this).next().removeClass("apsolutni"),$(this).text("Read more"))}),
 
-			var S=document.getElementById("reason"),z=S.nextElementSibling,B=document.getElementById("adopt"),H=B.nextElementSibling,x=document.getElementById("dugme");
-			x.addEventListener("click",function(){
-				var e=[];
-				x.classList.add("bojaKlik"),"0"==S.value?(z.innerHTML="Choose type of your message",z.classList.add("greska"),e.push("Non-selected type of message.")):(z.innerHTML="",z.classList.remove("greska"),e.pop()),"0"==B.value?(H.innerHTML="Choose a cat",H.classList.add("greska"),e.push("Non-selected cat for adoption.")):(H.innerHTML="",H.classList.remove("greska"),e.pop());
-
-			
-			var a=document.getElementById("FirstName"),i=a.nextElementSibling;
-			/^[A-Z][a-z]{2,}$/.test(a.value)?(i.innerHTML="",i.classList.remove("greska"),e.pop()):(i.innerHTML="Incorrect name",i.classList.add("greska"),e.push("Incorrect name."));
-			var t=document.getElementById("LastName"),s=t.nextElementSibling;
-			/^([A-Z][a-z]{2,})(\s[A-Z][a-z]{2,})?$/.test(t.value)?(s.innerHTML="",s.classList.remove("greska"),e.pop()):(s.innerHTML="Incorrect last name",s.classList.add("greska"),e.push("Incorrect last name."));
-			var n=document.getElementById("email"),l=n.nextElementSibling;document.getElementById("email").autocomplete="off",/^([a-z0-9\.\_\-])+@([a-z])+\.([a-z]){2,}$/.test(n.value)?(l.innerHTML="",l.classList.remove("greska"),e.pop()):(l.innerHTML="Incorrect e-mail address",l.classList.add("greska"),e.push("Incorrect e-mail."));
-			var r="";
-			if(0!=e.length){
-				for(let a=0;a < e.length;a++)
-						r+=`${e[a]} <br/><br/>`;
-					Swal.fire({position:"center",icon:"error",title:`${r}`,showConfirmButton:!0,timer:5e3})}
-			
-			0==e.length && Swal.fire({position:"center",icon:"success",title:"Your message has been sent!",showConfirmButton:!1,timer:2e3})});
-			
-
-			var P=[],T=[];
-			for(let e=0; e<12; e++)
-				P[e]=e+1,T[e]=`Gallery ${e+1}`;
-			
-			for(let e=0;e<P.length;e++)
-				if(e<=5){var I=document.createElement("div");
-							I.classList.add("col-lg-2","col-md-4","col-sm-6","p-0","mb-3"),
-							I.innerHTML+=`<a class="linkSlika" href="images/shelter/${P[e]}.jpg" title="${T[e]}"><img src="images/shelter/${P[e]}.jpg" alt="${T[e]}  class="slikaShelter" /></a>`,document.getElementsByClassName("shelter")[0].appendChild(I)}else{var G=document.createElement("div");G.classList.add("col-lg-2","col-md-4","col-sm-6","p-0","mb-3"),G.innerHTML+=`<a class="linkSlika" title="${T[e]}" href="images/shelter/${P[e]}.jpg"><img src="images/shelter/${P[e]}.jpg" alt="${T[e]} class="slikaShelter" />`,document.getElementsByClassName("shelter")[1].appendChild(G)}$(document).ready(function(){$("#services .vrstaKafe").hover(function(){$(this).removeClass("vrstaKafe"),$(this).addClass("weProvideOpposite")},function(){$(this).removeClass("weProvideOpposite"),$(this).addClass("weProvide")}),$(".listaFuter li a i").hover(function(){$(this).stop(!0,!0).animate({fontSize:"+=4px",paddingTop:"-=2px"},500)},function(){$(this).stop(!0,!0).animate({fontSize:"-=4px",paddingTop:"+=2px"},500)}),$(".linkA").click(function(){$("#reason").val("2").change(),$(".sk").removeClass("skriven"),$(".promeniCol").removeClass("col-md-12").addClass("col-md-6")}),$("#here").click(function(){$("#reason").val("2").change(),$(".sk").removeClass("skriven"),$(".promeniCol").removeClass("col-md-12").addClass("col-md-6")});
-				var e=0;$(".kartica").click(function(a){a.preventDefault(),++e%2==1?($(this).next().addClass("apsolutni"),$(this).text("Close")):($(this).next().removeClass("apsolutni"),$(this).text("Read more"))}),
-				$(".linkA").click(function(){var e,a=$(this).prev().text(),i=document.querySelectorAll("#adopt option");
-				for(let t=0;t<c.length+1;t++)i[t].text==a&&(e=i[t].value);
-					$("#adopt").val(e).change()}),
 					$(".navbar-toggler").click(function(){
-							$(".navbar-collapse").toggle("slow")}),
+							$(".navbar-collapse").toggle("fast")}),
 						
 						$("#lista li").hover(function(){
-							$(this).addClass("meniLi")},function(){
-												$(this).removeClass("meniLi")}),
+							$(this).addClass("meniLi")},
+							function(){$(this).removeClass("meniLi")}),
 						AOS.init(),
 						
 						$(".popup-modal").click(function(e){
-							Swal.fire({text:"Nikola Dimitrijevic | 27/19",imageUrl:"images/autor.jpg",imageWidth:"70%",imageHeight:"70%",imageAlt:"Author's image"}),
-							e.preventDefault()}),
-						$(".linkSlika").click(function(e){let a=$(this).attr("href");
-											e.preventDefault(),
-											Swal.fire({imageUrl:a,imageWidth:"100%",imageHeight:"100%"})}),
-						$(".linkZaLjubimce").click(function(e){
-								let a=$(this).attr("href"),
-								i=$(this).next().next().next().text();
-								e.preventDefault(),
-								Swal.fire({title:i,imageUrl:a,imageWidth:"400",imageHeight:"200"})}),
-						$(".mini").click(function(e){
-								let a=$(this).attr("href");
-								e.preventDefault(),Swal.fire({imageUrl:a,imageWidth:"400",imageHeight:"200"})})})};
+							Swal.fire({text:"Nikola Dimitrijevic | 27/19  ",imageUrl:"images/autor.jpg",imageWidth:"70%",imageHeight:"70%",imageAlt:"Author's image"}),
+							e.preventDefault()})})};
+
+
+
+							

@@ -31,10 +31,6 @@ body{
 		  transform: scale(1.1, 1.1);
 		  transition: 0.3s;
 	}
-@media screen and (max-width:575px){
-	.izmena2{display:none}
-	.okvir i{width:70%}
-	.divovi{max-width:90%}}
 	i.material-icons{color:#7c5295;font-size:16px}
 	.logo{
 		height:50px;
@@ -121,6 +117,8 @@ body{
 				display:none;
 			}}
 		@media screen and (max-width:576px){
+			.izmena2{display:none}
+			.okvir i{width:70%}
 			.novo3{
 				display:none!important;
 			}}
@@ -138,16 +136,7 @@ body{
 		@media screen and (max-width:383px){
 			.apsolutnaPoz h1{
 				font-size:20px;
-			}}
-		@media screen and (max-width:316px){
-			.apsolutnaPoz{
-				top:32%;
-			}}
-		@media screen and (max-width:289px){
-			.apsolutnaPoz h1{
-				display:none;
-			}}
-			
+			}}			
 			.bojaOffer{
 				background-color: #ffd480;
 				color: #4d2600;
@@ -170,14 +159,6 @@ body{
 			.senka{
 				box-shadow: 3px 5px 6px -1px rgba(0,0,0,0.57);
 			}
-			.weProvideOpposite i{
-				border-radius:50px;
-				font-size:30px;
-				padding:20px;
-				color:#7c5295;
-				background-color:#fff;
-				border:1px solid #fff;
-			}
 			.suggestion{
 				color:#4d2600;
 			}
@@ -186,22 +167,37 @@ body{
 				color:#4d2600;
 				border-top:1px solid rgba(124,82,149,.3);
 				width:100%;
-				display:block;
+				display: block;
 				height:55px;
 				margin-top: 10px;
 				border-radius:0 0 10px 10px;
 				padding-top: 15px;
 			}
-			.divovi{box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);border-radius:10px;padding:0;margin-bottom:55px!important;max-width:23%}
-			.divovi img{width:100%;border-radius:10px 10px 0 0}
-			.divovi h3{width:100%;font-family:"Gloria Hallelujah",cursive!important;color:#464646!important}
-			.d{width:90%}
-			@media screen and (max-width:991px){
-				.divovi{max-width:46%}
-				.izmene li:nth-child(2){margin-left:0!important}
-				}
+			.divovi{
+				box-shadow:0 2px 5px 0 rgba(0,0,0,.16),0 2px 10px 0 rgba(0,0,0,.12);
+				border-radius:10px;
+				padding:0;
+				margin-bottom:55px !important;
+				max-width:23%;
+			}
+			.divovi img{
+				width:100%;
+				border-radius:3px 3px 0 0;
+			}
+			.divovi h3{
+				width:100%;
+				font-family:"Gloria Hallelujah",cursive !important;
+				color:#464646!important;
+			}
 			@media screen and (max-width:767px){
-					.divovi{max-width:90%}}
+					.apsolutni{
+							height:88%;
+						}
+					.divovi{
+						min-width: 80%;
+					}
+					}
+					
 					.cena{
 						color:#4d2600;
 						text-align: center;
@@ -237,23 +233,21 @@ body{
 					.caption{
 						font-size: 2rem;
 					}
-
-				@media screen and (max-width:317px){
-					.listaFuter li{
-						width:40px;
-						height:40px;
-					}
-					.listaFuter li a i{
-						padding-top:10px;
-					}}
-
-				@media screen and (max-width:575px){
-					.pP{order:2}}
 				@media screen and (max-width:991px){
-					.pP{
-						padding-bottom:10px
+					.pFooter{
+						padding-bottom:10px;
+						order:2;
+					}
+					.apsolutni{
+							height: 86%;
+					}
+					.divovi{max-width: 60%}
+					.izmene li:nth-child(2){margin-left:0!important;
 					}}
-
+					#forma{
+						width: 60%;
+						margin: 0 auto;
+					}
 					.formaStyle{
 						color:#4d2600;
 						min-height:400px;
@@ -295,9 +289,6 @@ body{
 						color:#fff;
 						border:2px solid #fff;
 					}
-					.skriven{
-						display:none;
-					}
 					.greska{
 						color:red;
 					}
@@ -321,7 +312,8 @@ body{
 						padding-top: 60px;
 					}
 					.linkSlika img{
-						width:100%!important;height:100%!important;
+						width:100%!important;
+						height:100%!important;
 					}
 					.apsolutni{
 						position:absolute;
@@ -340,26 +332,25 @@ body{
 						margin-bottom: 5px;
 						}
 					.bojaSlova{color:#7c5295}
-					@media screen and (max-width:991px){
-						.apsolutni{
-							height:86%;
-						}
-					}
-					@media screen and (max-width:767px){
-						.apsolutni{
-							height:88%;
-						}
-					}
 					@media screen and (max-width:435px){
 						.apsolutni{
 							height:84%;
 						}
 					}
-					@media screen and (max-width:249px){
-						.apsolutni{
-							display:none;
-						}
-						.kartica{
-							display:none;
-						}
-					}
+
+
+/* errori */
+
+.error{
+	border: 1px solid red !important;
+  }
+  .errorHidden{
+	display: none;
+	color: red;
+  }
+  .errorVisible{
+	display: block;
+	color: #000;
+
+  }
+		
