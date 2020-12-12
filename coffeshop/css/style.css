@@ -1,6 +1,6 @@
 
 html{
-	scroll-behavior:smooth
+	scroll-behavior:smooth;
 }
 body{
 	color:#fff;
@@ -10,9 +10,6 @@ body{
 .navbar-light .navbar-nav .nav-link{
 	color: #4d2600;
 		}
-.navbar-light .navbar-nav .nav-link:hover{
-	
-}
 .navbar-light .navbar-nav .active>.nav-link,.navbar-light .navbar-nav .nav-link.active,.navbar-light .navbar-nav .nav-link.show,.navbar-light .navbar-nav .show>.nav-link{
 		color: #4d2600;
 }
@@ -31,7 +28,10 @@ body{
 		  transform: scale(1.1, 1.1);
 		  transition: 0.3s;
 	}
-	i.material-icons{color:#7c5295;font-size:16px}
+i.material-icons{
+	color:#7c5295;
+	font-size:16px;
+}
 	.logo{
 		height:50px;
 	}
@@ -41,7 +41,9 @@ body{
 		clip-path: ellipse(120% 100% at 50% 0);
 	}
 	.apsolutnaPoz{
-		top:33%;text-align:center;z-index:3;
+		top:33%;
+		text-align:center;
+		z-index:3;
 	}
 	.dark{
 		background-color:rgba(0,0,0,.7);
@@ -49,7 +51,8 @@ body{
 		height:100%;
 		top:0;
 		z-index:2;
-		clip-path:ellipse(120% 100% at 50% 0)}
+		clip-path:ellipse(120% 100% at 50% 0);
+	}
 	.precice{
 				display:inline-block;
 				background-color: #ffd480;
@@ -87,56 +90,8 @@ body{
 		color:#4d2600;
 		font-family:"Gloria Hallelujah",cursive;
 	}
-	@media screen and (max-width:1127px){
-		.apsolutnaPoz h1{
-			font-size:30px
-		}
-		.apsolutnaPoz{
-			top:30%
-		}
-		.precice{
-			font-size:15px
-		}}
-		@media screen and (max-width:910px){
-			.precice{
-				padding:10px!important;
-				margin-top:10px;
-				height:10%;
-			}
-			.apsolutnaPoz{
-				top:35%
-			}
-			.apsolutnaPoz p{
-				display:none
-			}}
-		@media screen and (max-width:830px){
-			.precice{
-				width:30%
-			}
-			.precice:first-child{
-				display:none;
-			}}
-		@media screen and (max-width:576px){
-			.izmena2{display:none}
-			.okvir i{width:70%}
-			.novo3{
-				display:none!important;
-			}}
-		@media screen and (max-width:696px){
-			.apsolutnaPoz h1{
-				font-size:25px
-			}}
-		@media screen and (max-width:588px){
-			.apsolutnaPoz{
-				top:37%
-			}
-			.apsolutnaPoz .precice{
-				display:none;
-			}}
-		@media screen and (max-width:383px){
-			.apsolutnaPoz h1{
-				font-size:20px;
-			}}			
+	
+			
 			.bojaOffer{
 				background-color: #ffd480;
 				color: #4d2600;
@@ -189,19 +144,11 @@ body{
 				font-family:"Gloria Hallelujah",cursive !important;
 				color:#464646!important;
 			}
-			@media screen and (max-width:767px){
-					.apsolutni{
-							height:88%;
-						}
-					.divovi{
-						min-width: 80%;
-					}
-					}
 					
-					.cena{
-						color:#4d2600;
-						text-align: center;
-					}
+			.cena{
+				color:#4d2600;
+				text-align: center;
+				}
 					.naslov{
 						color:#4d2600;
 					}
@@ -233,17 +180,6 @@ body{
 					.caption{
 						font-size: 2rem;
 					}
-				@media screen and (max-width:991px){
-					.pFooter{
-						padding-bottom:10px;
-						order:2;
-					}
-					.apsolutni{
-							height: 86%;
-					}
-					.divovi{max-width: 60%}
-					.izmene li:nth-child(2){margin-left:0!important;
-					}}
 					#forma{
 						width: 60%;
 						margin: 0 auto;
@@ -268,12 +204,6 @@ body{
 					.form-control::placeholder,textarea::placeholder{
 						color:#4d2600;
 					}
-					.bojaKlik{
-						background-color:#4d2600;
-					}
-					.bojaKlik:focus{
-						background-color:#4d2600;
-					}
 					.btn:focus,.form-control:focus{
 						border-color:inherit;
 						-webkit-box-shadow:none;
@@ -289,31 +219,18 @@ body{
 						color:#fff;
 						border:2px solid #fff;
 					}
-					.greska{
-						color:red;
-					}
 					.specialCoffe{
 						background-color: #ffd480;
 						color: #4d2600;
 						min-height:300px;
 						clip-path:ellipse(120% 100% at 50% 0);
 					}
-					.spanOffer{font-family:"Gloria Hallelujah",cursive;text-transform:uppercase}
-					.spanOffer:first-child a{text-transform:lowercase;color:#fff;text-decoration:underline}
 					.specialImg{
 						width:100%;
-						height:90%
-					}
-					.slika a img{
-						width:200px;
-						height:200px
+						height:90%;
 					}
 					.paddingSvi{
 						padding-top: 60px;
-					}
-					.linkSlika img{
-						width:100%!important;
-						height:100%!important;
 					}
 					.apsolutni{
 						position:absolute;
@@ -330,14 +247,81 @@ body{
 					a .slicica{
 						width:90%;
 						margin-bottom: 5px;
+						}				
+
+
+/*Queries*/
+
+		@media screen and (max-width:1127px){
+				.apsolutnaPoz h1{
+						font-size:30px;
+					}
+				.apsolutnaPoz{
+						top:30%;
+					}
+				.precice{
+						font-size:15px;
+		}}
+		@media screen and (max-width:991px){
+					.pFooter{
+						padding-bottom:10px;
+						order:2;
+					}
+					.apsolutni{
+							height: 86%;
+					}
+					.divovi{
+						max-width: 60%;
+					}}
+		@media screen and (max-width:910px){
+			.precice{
+				padding:10px!important;
+				margin-top:10px;
+				height:10%;
+			}
+			.apsolutnaPoz{
+				top:35%;
+			}
+			.apsolutnaPoz p{
+				display:none;
+			}}
+		@media screen and (max-width:830px){
+			.precice{
+				width:30%;
+			}
+			.precice:first-child{
+				display:none;
+			}}
+		@media screen and (max-width:767px){
+					.apsolutni{
+							height:88%;
 						}
-					.bojaSlova{color:#7c5295}
-					@media screen and (max-width:435px){
+					.divovi{
+						min-width: 80%;
+					}}
+		@media screen and (max-width:696px){
+					.apsolutnaPoz h1{
+						font-size:25px;
+			}}
+		@media screen and (max-width:588px){
+			.apsolutnaPoz{
+				top:37%
+			}
+			.apsolutnaPoz .precice{
+				display:none;
+			}}
+		@media screen and (max-width:576px){
+			.okvir i{
+				width:70%
+			}}
+		@media screen and (max-width:435px){
 						.apsolutni{
 							height:84%;
-						}
-					}
-
+						}}
+		@media screen and (max-width:383px){
+			.apsolutnaPoz h1{
+				font-size:20px;
+			}}	
 
 /* errori */
 
@@ -353,4 +337,5 @@ body{
 	color: #000;
 
   }
+		
 		

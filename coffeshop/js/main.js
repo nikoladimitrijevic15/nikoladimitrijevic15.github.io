@@ -1,26 +1,26 @@
 window.onload=function(){
 	
 	var e=document.getElementsByClassName("about"),
-	a=["Long time ago, precisely in 1998. my father started up small bussiness. Different types of coffee were distibuted on our market. That was the way of introducing our population to exotic and foreign taste.","Distribution of coffee wasn't enouh, it was time for a new brand. All coffee lovers needed one place where they can enjoy different and strong coffee flavour. That was the way that 'Strks' became first coffeeshop in Serbia.","The time had passed, and now its my bussiness. My name is Nikola and I am inviting you to visit us, supports small bussiness and of course ENJOY."];
-	for(let i=0; i < e.length; i++)
+	tekstovi=["Long time ago, precisely in 2014. my father started up small bussiness. Different types of coffee were distibuted on our market. That was the way of introducing our population to exotic and foreign taste.","Distribution of coffee wasn't enouh, it was time for a new brand. All coffee lovers needed one place where they can enjoy different and strong coffee flavour. That was the way that 'Strks' became first coffeeshop in Serbia.","The time had passed, and now its my bussiness. My name is Nikola and I am inviting you to visit us, supports small bussiness and of course ENJOY."];
+	for(let i=0; i < e.length; i++){
 		e[i].innerHTML+="<div><h3></h3></div>",
-		e[i].innerHTML+="<p>"+a[i]+"</p>", 
+		e[i].innerHTML+="<p>"+tekstovi[i]+"</p>", 
 		e[i].firstElementChild.classList.add("okvir"),
-		$(e[0]).find("span").addClass("strks");
+		$(e[0]).find("span").addClass("strks");}
 	
-	var i=["slika1","slika2","slika3"],
-		t=["coffeeshop","coffee","relaxing with coffe"],
+	var slike=["slika1","slika2","slika3"],
+		alts=["coffeeshop","coffee","relaxing with coffe"],
 		s=1;
 		setInterval(function(){
-			document.getElementById("slika").src="images/" + i[s] + ".jpg",	
-			document.getElementById("slika").alt=t[s++], 3==s && (s=0)}, 3e3);
+			document.getElementById("slika").src="images/" + slike[s] + ".jpg",	
+			document.getElementById("slika").alt=alts[s++], 3==s && (s=0)}, 3e3);
 
-			var n=-1, l=setInterval(function(){
-						2014==n&&clearInterval(l),
+			var n=-1, broji1=setInterval(function(){
+						2014==n&&clearInterval(broji1),
 						e[0].firstElementChild.firstElementChild.innerHTML=n,n+=5},3),
 						r=1,
-						o=setInterval(function(){
-							2016==r&&clearInterval(o),
+						broji2=setInterval(function(){
+							2016==r&&clearInterval(broji2),
 							e[1].firstElementChild.firstElementChild.innerHTML=r,r+=5},3);
 
 						e[2].firstElementChild.firstElementChild.innerHTML="now".toUpperCase();
@@ -47,35 +47,32 @@ window.onload=function(){
 			e>=4 ? y[1].appendChild(v) : y[0].appendChild(v)
 		}
 			
-			var w=['<i class="fab fa-facebook-square"></i>','<i class="fab fa-instagram"></i>','<i class="fab fa-linkedin"></i>'],
-				k=["https://www.facebook.com","https://www.instagram.com","https://linkedin.com"],
+			var icons=['<i class="fab fa-facebook-square"></i>','<i class="fab fa-instagram"></i>','<i class="fab fa-linkedin"></i>'],
+				links=["https://www.facebook.com","https://www.instagram.com","https://linkedin.com"],
 				b=document.createElement("ul");
 				
 				b.classList.add("list-unstyled","listaFuter","d-flex","flex-direction-row","justify-content-around"),
 				document.getElementById("social").appendChild(b);
 			
-			for(let e=0; e < w.length; e++)
-				document.querySelector("#social ul").innerHTML+=`<li>\n <a target="_blank" href="${k[e]}" class="text-decoration-none">\n${w[e]}\n</a>\n</li>`;
+			for(let e=0; e < icons.length; e++)
+				document.querySelector("#social ul").innerHTML+=`<li>\n <a target="_blank" href="${links[e]}" class="text-decoration-none">\n${icons[e]}\n</a>\n</li>`;
 			
-			var L=['<i class="fas fa-sitemap"></i>','<i class="far fa-file-code"></i>','<i class="far fa-address-card"></i>'],
-				M=["sitemap.xml","dokumentacija.pdf","#test-modal"],
+			var docs=['<i class="fas fa-sitemap"></i>','<i class="far fa-file-code"></i>','<i class="far fa-address-card"></i>'],
+				path=["sitemap.xml","dokumentacija.pdf","#test-modal"],
 				j=document.createElement("ul");
 				
 				j.classList.add("list-unstyled","listaFuter","d-flex","flex-row","justify-content-around"),
 				document.getElementById("files").appendChild(j);
 			
-			for(let e=0; e < L.length; e++)
-				document.querySelector("#files ul").innerHTML+=2==e?`<li>\n <a target="_blank" href="${M[e]}" class="text-decoration-none popup-modal">\n${L[e]}\n</a>\n</li>`:`<li>\n<a target="_blank" href="${M[e]}" class="text-decoration-none">\n${L[e]}\n</a>\n</li>`;
+			for(let e=0; e < docs.length; e++)
+				document.querySelector("#files ul").innerHTML+=2==e?`<li>\n <a target="_blank" href="${path[e]}" class="text-decoration-none popup-modal">\n${docs[e]}\n</a>\n</li>`:`<li>\n<a target="_blank" href="${path[e]}" class="text-decoration-none">\n${docs[e]}\n</a>\n</li>`;
 					$(document).ready(function(){
 						$(".listaFuter li a i").hover(
 							function(){
 								$(this).stop(!0,!0).animate({fontSize:"+=4px",paddingTop:"-=2px"},100)},
 							function(){
-								$(this).stop(!0,!0).animate({fontSize:"-=4px",paddingTop:"+=2px"},100)}),			
-						$("#here").click(function(){
-							$("#tables").val("2").change(),
-							$(".sk").removeClass("skriven"),
-							$(".promeniCol").removeClass("col-md-12").addClass("col-md-6")});
+								$(this).stop(!0,!0).animate({fontSize:"-=4px",paddingTop:"+=2px"},100)});			
+						
 					var e=0;
 					$(".kartica").click(
 						function(a){
@@ -91,7 +88,7 @@ window.onload=function(){
 						AOS.init(),
 						
 						$(".popup-modal").click(function(e){
-							Swal.fire({text:"Nikola Dimitrijevic | 27/19  ",imageUrl:"images/autor.jpg",imageWidth:"70%",imageHeight:"70%",imageAlt:"Author's image"}),
+							Swal.fire({text:"Hello my name is Nikola. I am styding at ICT college and my plan is to become as good as possible in programing. Click on copyright text and see my portfolio, and come to work together!",imageUrl:"images/autor.jpg",imageWidth:"70%",imageHeight:"70%",imageAlt:"Author's image"}),
 							e.preventDefault()})})};
 
 
