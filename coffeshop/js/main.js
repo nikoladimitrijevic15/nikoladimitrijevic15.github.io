@@ -1,12 +1,12 @@
 window.onload=function(){
 	
-	var e=document.getElementsByClassName("about"),
+	var about=document.getElementsByClassName("about"),
 	tekstovi=["Long time ago, precisely in 2014. my father started up small bussiness. Different types of coffee were distibuted on our market. That was the way of introducing our population to exotic and foreign taste.","Distribution of coffee wasn't enouh, it was time for a new brand. All coffee lovers needed one place where they can enjoy different and strong coffee flavour. That was the way that 'Strks' became first coffeeshop in Serbia.","The time had passed, and now its my bussiness. My name is Nikola and I am inviting you to visit us, supports small bussiness and of course ENJOY."];
-	for(let i=0; i < e.length; i++){
-		e[i].innerHTML+="<div><h3></h3></div>",
-		e[i].innerHTML+="<p>"+tekstovi[i]+"</p>", 
-		e[i].firstElementChild.classList.add("okvir"),
-		$(e[0]).find("span").addClass("strks");}
+	for(let i=0; i < about.length; i++){
+		about[i].innerHTML+="<div><h3></h3></div>",
+		about[i].innerHTML+="<p>"+tekstovi[i]+"</p>", 
+		about[i].firstElementChild.classList.add("okvir"),
+		$(about[0]).find("span").addClass("strks");}
 	
 	var slike=["slika1","slika2","slika3"],
 		alts=["coffeeshop","coffee","relaxing with coffe"],
@@ -17,13 +17,13 @@ window.onload=function(){
 
 			var n=-1, broji1=setInterval(function(){
 						2014==n&&clearInterval(broji1),
-						e[0].firstElementChild.firstElementChild.innerHTML=n,n+=5},3),
+						about[0].firstElementChild.firstElementChild.innerHTML=n,n+=5},3),
 						r=1,
 						broji2=setInterval(function(){
 							2016==r&&clearInterval(broji2),
-							e[1].firstElementChild.firstElementChild.innerHTML=r,r+=5},3);
+							about[1].firstElementChild.firstElementChild.innerHTML=r,r+=5},3);
 
-						e[2].firstElementChild.firstElementChild.innerHTML="now".toUpperCase();
+						about[2].firstElementChild.firstElementChild.innerHTML="now".toUpperCase();
 
 
 			var c=["Jamaican","Turkish","Colombian","Kopi Luwak"],
@@ -36,15 +36,15 @@ window.onload=function(){
 					"Civet Coffee is one of the most expensive and best coffee in the world. Civet or Luwak Coffee is made from the faeces of the Asian Palm Civet. It might sound disgusting, but this little fella’s (Palm Civet) poo can be considered as gold! Please be aware to make sure that you will only support Luwak Coffee that is sustainably farmed.  In some places, the health and living conditions of the Asian Palm Civet are not well looked after by the farmers!"],
 			y=document.getElementsByClassName("div");
 			for(let e=0; e < c.length; e++){
-				var v=document.createElement("div");
-				v.classList.add("col-lg-3","divovi","col-md-12","position-relative"),
-				v.setAttribute("data-aos","fade-right"),
-			v.innerHTML+=`<img class="visina" src="images/${imgName[e]}.jpg" class="img-responsive" alt="${altImg[e]}" /></a>\n`,
-			v.innerHTML+=`<span class="cena">${price[e]}</span>`,
-			v.innerHTML+=`<h3 class="text-center mt-3">${c[e]}</h3>`,
-			v.innerHTML+='<a href="#" class="text-decoration-none kartica text-uppercase"> Read more </a>',
-			v.innerHTML+=`<div class="d-none slova"> <h3 class="mt-3 mb-3">${c[e]}</h3> <p class="pl-2 pr-2">${rdm[e]} </p>`,
-			e>=4 ? y[1].appendChild(v) : y[0].appendChild(v)
+				var karta=document.createElement("div");
+				karta.classList.add("col-lg-3","divovi","col-md-12","position-relative"),
+				karta.setAttribute("data-aos","fade-right"),
+			karta.innerHTML+=`<img class="visina" src="images/${imgName[e]}.jpg" class="img-responsive" alt="${altImg[e]}" /></a>\n`,
+			karta.innerHTML+=`<span class="cena">${price[e]}</span>`,
+			karta.innerHTML+=`<h3 class="text-center mt-3">${c[e]}</h3>`,
+			karta.innerHTML+=`<a href="#" class="text-decoration-none kartica text-uppercase"> Read more </a>`,
+			karta.innerHTML+=`<div class="d-none slova"> <h3 class="mt-3 mb-3">${c[e]}</h3> <p class="pl-2 pr-2">${rdm[e]} </p>`,
+			e>=4 ? y[1].appendChild(karta) : y[0].appendChild(karta)
 		}
 			
 			var icons=['<i class="fab fa-facebook-square"></i>','<i class="fab fa-instagram"></i>','<i class="fab fa-linkedin"></i>'],
@@ -64,8 +64,9 @@ window.onload=function(){
 				j.classList.add("list-unstyled","listaFuter","d-flex","flex-row","justify-content-around"),
 				document.getElementById("files").appendChild(j);
 			
-			for(let e=0; e < docs.length; e++)
-				document.querySelector("#files ul").innerHTML+=2==e?`<li>\n <a target="_blank" href="${path[e]}" class="text-decoration-none popup-modal">\n${docs[e]}\n</a>\n</li>`:`<li>\n<a target="_blank" href="${path[e]}" class="text-decoration-none">\n${docs[e]}\n</a>\n</li>`;
+			for(let e=0; e < docs.length; e++){
+			document.querySelector("#files ul").innerHTML+=2==e?`<li>\n <a target="_blank" href="${path[e]}" class="text-decoration-none popup-modal">\n${docs[e]}\n</a>\n</li>`:`<li>\n<a target="_blank" href="${path[e]}" class="text-decoration-none">\n${docs[e]}\n</a>\n</li>`;}
+									
 					$(document).ready(function(){
 						$(".listaFuter li a i").hover(
 							function(){
@@ -73,24 +74,25 @@ window.onload=function(){
 							function(){
 								$(this).stop(!0,!0).animate({fontSize:"-=4px",paddingTop:"+=2px"},100)});			
 						
-					var e=0;
-					$(".kartica").click(
-						function(a){
-							a.preventDefault(),
-							++e%2==1?($(this).next().addClass("apsolutni"),$(this).text("Close")):($(this).next().removeClass("apsolutni"),$(this).text("Read more"))}),
+							var e=0;
+							$(".kartica").click(
+							function(a){
+								a.preventDefault(),
+								++e%2==1?($(this).next().addClass("apsolutni"),$(this).text("Close")):($(this).next().removeClass("apsolutni"),$(this).text("Read more"))}),
 
-					$(".navbar-toggler").click(function(){
-							$(".navbar-collapse").toggle("fast")}),
+							$(".navbar-toggler").click(function(){
+									$(".navbar-collapse").toggle("fast")}),
 						
-						$("#lista li").hover(function(){
+									$("#lista li").hover(function(){
 							$(this).addClass("meniLi")},
-							function(){$(this).removeClass("meniLi")}),
-						AOS.init(),
+									function(){$(this).removeClass("meniLi")}),
+								AOS.init(),
 						
-						$(".popup-modal").click(function(e){
+							$(".popup-modal").click(function(e){
 							Swal.fire({text:"Hello my name is Nikola. I am styding at ICT college and my plan is to become as good as possible in programing. Click on copyright text and see my portfolio, and come to work together!",imageUrl:"images/autor.jpg",imageWidth:"70%",imageHeight:"70%",imageAlt:"Author's image"}),
 							e.preventDefault()})})};
 
 
 
+							
 							
