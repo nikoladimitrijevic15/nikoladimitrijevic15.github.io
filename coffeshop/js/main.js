@@ -6,7 +6,8 @@ window.onload=function(){
 		about[i].innerHTML+="<div><h3></h3></div>",
 		about[i].innerHTML+="<p>"+tekstovi[i]+"</p>", 
 		about[i].firstElementChild.classList.add("okvir"),
-		$(about[0]).find("span").addClass("strks");}
+		$(about[0]).find("span").addClass("strks");
+		}
 	
 	var slike=["slika1","slika2","slika3"],
 		alts=["coffeeshop","coffee","relaxing with coffe"],
