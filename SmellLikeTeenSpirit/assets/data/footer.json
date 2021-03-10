@@ -1,0 +1,65 @@
+[
+    {
+    "id": 1,
+    "name": "",
+    "icon": "fab fa-instagram",
+    "href": "https://www.instagram.com/",
+    "type": "Social"
+    },
+    {
+    "id": 2,
+    "name": "",
+    "icon": "fab fa-facebook-f",
+    "href": "https://www.facebook.com/",
+    "type": "Social"
+    },
+    {
+    "id": 3,
+    "name": "",
+    "icon": "fab fa-twitter",
+    "href": "https://twitter.com/",
+    "type": "Social"
+    },
+    {
+    "id": 4,
+    "name": "",
+    "icon": "fab fa-youtube",
+    "href": "https://www.youtube.com/",
+    "type": "Social"
+    },
+    {
+        "id": 7,
+        "name": "",
+        "icon": "fas fa-sitemap",
+        "href": "sitemap.xml",
+        "type": "Documents"
+        },
+        {
+        "id": 8,
+        "name": "",
+        "icon": "far fa-file-alt",
+        "href": "dokumentacija.pdf",
+        "type": "Documents"
+        },
+        {
+        "id": 10,
+        "name": "",
+        "icon": "fab fa-linkedin-in",
+        "href": "https://www.linkedin.com/",
+        "type": "Author"
+        },
+        {
+        "id": 12,
+        "name": "",
+        "icon": "fab fa-facebook-f",
+        "href": "https://www.facebook.com/",
+        "type": "Author"
+        },
+        {
+        "id": 13,
+        "name": "",
+        "icon": "fab fa-instagram",
+        "href": "https://www.instagram.com/",
+        "type": "Author"
+        }
+       ]

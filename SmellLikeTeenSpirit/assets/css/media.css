@@ -1,0 +1,73 @@
+@media screen and (min-width: 634px) {
+    #banner img {
+        position: absolute;
+   }
+}
+@media screen and (max-width: 634px) {
+    #filterNav input, #filterNav select {
+        font-size: medium;
+   }
+   #filterNav h3{
+       font-size: large;
+       padding-top: 10px;
+   }
+    .btnsml {
+        font-size: small !important;
+   }
+    #return-to-top {
+        right: 10px;
+   }
+    #whatAmelon p {
+        font-size: medium !important;
+   }
+}
+@media screen and (min-width: 1600px) {
+    #author {
+        height: 75%;
+   }
+    #author h1 {
+        font-size: 3vw !important;
+   }
+    #author h2 {
+        font-size: 1.1vw !important;
+   }
+    #product h1 {
+        font-size: 3vw;
+   }
+    #product h2 {
+        font-size: 2vw;
+   }
+    #product p, #product li {
+        font-size: medium;
+   }
+}
+@media screen and (max-width: 576px) {
+    h1 {
+        font-size: 6vw !important;
+   }
+    h2 {
+        font-size: 4vw !important;
+   }
+    #carouselSlide .carousel-caption p {
+        display: none !important;
+   }
+    .btnsml {
+        font-size: x-small !important;
+   }
+}
+@media screen and (max-width: 1250px) and (min-width: 767px) {
+    #product h1 {
+        font-size: 3vw;
+   }
+    #product h2 {
+        font-size: 2vw;
+   }
+    #product p, #product li {
+        font-size: small;
+   }
+}
+@media screen and (max-width: 846px) {
+    .pI {
+        font-size: small !important;
+   }
+}
