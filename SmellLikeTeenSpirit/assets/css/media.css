@@ -17,7 +17,7 @@
     #return-to-top {
         right: 10px;
    }
-    #whatAmelon p {
+    #topRated p {
         font-size: medium !important;
    }
 }
@@ -67,7 +67,7 @@
    }
 }
 @media screen and (max-width: 846px) {
-    .pI {
+    .spiritP {
         font-size: small !important;
    }
 }

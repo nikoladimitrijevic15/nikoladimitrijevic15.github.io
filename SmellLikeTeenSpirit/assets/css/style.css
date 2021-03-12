@@ -111,8 +111,7 @@ img {
     transform: scale(1.05);
 }
 #filterNav {
-    position: sticky !important;
-    top: 10;
+    position: -webkit-sticky !important;
 }
 select {
     width: 100%;
@@ -171,7 +170,7 @@ select {
 #product li {
     list-style-type: none;
 }
-#spa {
+#spiritShop {
     background-color: #4072b4b9;
     border-radius: 10px;
 }
@@ -262,14 +261,21 @@ select {
     background-color: rgb(3, 27, 43);;
     color: white;
 }
-.bSpa {
-    text-decoration: none;
-    width: fit-content;
-    color: black;
-}
 .formStyle{
     border: none;
     border-bottom: 1px solid rgb(0, 153, 255);
+    width: 100%;
+}
+.is-valid{
+    border-width: 2px;
+    border-color: green;
+}
+.is-invalid{
+    border-width: 2px;
+    border-color: red;
+}
+.invalid-feedback{
+    display: block;
     width: 100%;
 }
 #social, #documents, #authorF {
@@ -300,6 +306,9 @@ select {
 #social i, #documents i, #authorF i {
     width: 20px;
     text-align: center;
+}
+.pozicija{
+    position: fixed;
 }
 .fa-heart {
     color: rgba(255, 11, 11, 0.685);

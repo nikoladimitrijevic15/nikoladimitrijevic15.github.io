@@ -74,7 +74,7 @@ function displayProducts(data){
                     html += displayProduct(el)
                     });
 
-        document.querySelector("#whatAmelon").innerHTML = html;
+        document.querySelector("#topRated").innerHTML = html;
         $(".addToCart").click(addToCart);
         $(".openProduct").click(openProduct);
 }

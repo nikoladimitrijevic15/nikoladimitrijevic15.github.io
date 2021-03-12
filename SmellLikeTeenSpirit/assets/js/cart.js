@@ -2,10 +2,9 @@ $(document).ready(function () {
     let productsInCart = inCart();
     checkCart(productsInCart)
    });
-
-
-
+   
    function checkCart(productsInCart){
+       console.log("ChechC");
                     if(productsInCart){
                         if(productsInCart.length) displayCartData();
                         else showEmptyCart();
@@ -13,6 +12,7 @@ $(document).ready(function () {
                     else showEmptyCart();
                 }
    function displayCartData() {
+    console.log("displatC");
                 let productsInCart = inCart();
                 $.ajax({
                         url : "assets/data/products.json",
@@ -29,6 +29,7 @@ $(document).ready(function () {
                     });
                 }
    function generateCart(data) {
+    console.log("GenerateC");
     let html = `
                 <div class="w-100 d-flex justify-content-between mb-2">
                     <h1>Cart (`+data.length+`)</h1>
@@ -51,10 +52,11 @@ $(document).ready(function () {
     $(".openProduct").click(openProduct);
    }
    function generateRow(el) {
+    console.log("genrowC");
     return `   
             <div class="mb-1 mb-sm-3 d-flex flex-row border ">
-            <div data-id="${el.id}" class="openProduct h-100 w-25 d-flex justify-contentcenter align-items-center pt-5 pt-md-3 pt-lg-0">
-                <a class="w-75 myauto" href="product.html"><img src="${el.image}" alt="${el.name}" class="w-100"></a>
+            <div data-id="${el.id}" class="openProduct h-100 w-25 d-flex justify-content-center align-items-center pt-5 pt-md-3 pt-lg-0">
+                <a class="w-75 my-auto" href="product.html"><img src="${el.image}" alt="${el.name}" class="w-100"></a>
             </div>
             <div data-id="${el.id}" class="openProduct col mt-5">
                 <a href="product.html">
@@ -79,6 +81,7 @@ $(document).ready(function () {
     clearCart();
    }
    function sum(data){
+    console.log("sum");
     let sum=0;
     data.forEach(el=>{
         sum+=parseFloat(el.price.substring(1)*el.quantity)
@@ -86,9 +89,10 @@ $(document).ready(function () {
         return sum;
        }
     function showEmptyCart() {
-        $("#cartContent").html("<div class='mx-auto d-flex w-75'><img class='w-100 alignself-center' src='assets/images/empty.png' alt='Your cart is empty'></div>")
+        $("#cartContent").html("<div class='mx-auto d-flex w-75'><img class='w-100 align-self-center' src='assets/images/empty.png' alt='Your cart is empty'></div>");
        }
     function inCart() {
+        console.log("inC");
         return JSON.parse(localStorage.getItem("products"));
        }
     function removeFromCart(id) {
@@ -111,6 +115,7 @@ $(document).ready(function () {
         checkCart(filtered);
        }
        function openProduct(){
+        console.log("openP");
         let id = $(this).data("id");
         localStorage.setItem("product", id)
        }

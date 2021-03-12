@@ -101,5 +101,5 @@ function displayFooter(data){
     return `<li><a href="${el.href}" target="_blank"><i class="${el.icon}"></i></a></li>`;
    }
    function displayLi(el){
-    return `<li><a href="${el.href}" target="_blank"><i class="${el.icon}"></i> ${el.name}</a></li>`;
+    return `<li><a href="${el.href}" target="_blank"><i class="${el.icon}"></i></a></li>`;
    }
