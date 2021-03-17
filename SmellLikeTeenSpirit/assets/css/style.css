@@ -279,7 +279,6 @@ select {
     width: 100%;
 }
 #social, #documents, #authorF {
-    width: 30%;
     margin: 0 auto;
 }
 #social ul, #documents ul, #authorF ul {
@@ -328,7 +327,7 @@ select {
     font-weight: bold;
 }
 #cartContent p {
-    font-size: small;
+    font-size: medium;
     line-height: 1.5;
 }
 #cartContent i {
@@ -338,4 +337,7 @@ select {
     border-top: none;
     border-left: none;
     border-right: none;
+}
+.caption{
+    font-size: 1.5rem;
 }

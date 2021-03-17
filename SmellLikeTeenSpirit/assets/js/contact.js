@@ -11,13 +11,10 @@ function addError(parent, errorID, message) {
         errorDIV.innerHTML = message;
         parent.appendChild(errorDIV);
    }
-
 function removeError(errorID) {
     var element = document.getElementById(errorID);
         element.parentNode.removeChild(element);
    }
-
-
 function firstName(){
     console.log("u mienu");
     var ime = document.getElementById("firstName").value;

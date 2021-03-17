@@ -7,13 +7,14 @@ $(document).ready(function(){
     $("#search").keyup(searchFilter);
     $("#sort").change(sortPrice);
     resetLS();
+
 });
 function resetLS(){
- if(localStorage.getItem("idCat")!=null)  localStorage.removeItem("idCat")
+    if(localStorage.getItem("idCat")!=null)  localStorage.removeItem("idCat")
 
- if(localStorage.getItem("idCol")!=null) localStorage.removeItem("idCol")
+    if(localStorage.getItem("idCol")!=null) localStorage.removeItem("idCol")
 
- if(localStorage.getItem("idStype")!=null) localStorage.removeItem("idStype")
+    if(localStorage.getItem("idStype")!=null) localStorage.removeItem("idStype")
 }
 var allProducts;
 /* PRODUCT */
@@ -25,41 +26,42 @@ function ajaxProducts(callbackSuccess){
             success: callbackSuccess,
             error: function(xhr, error, status){
                 alert(status);}
-        }); }
+        }); 
+    }
 function products(){
     ajaxProducts(function(data){
                 allProducts=data;
                 displayProducts(data);
- }) }
+        }) 
+    }
 
 function displayProducts(data){
     let html = "";
     if(data.length !=0) data.forEach(el => {html += displayProduct(el)});
     else{
         html=`<h2 class="h3 m-auto my-3">No items match your search!</h2>`
-        }
-
- document.querySelector("#products").innerHTML = html;
- $(".addToCart").click(addToCart);
- $(".openProduct").click(openProduct);
+    }
+    document.querySelector("#products").innerHTML = html;
+    $(".addToCart").click(addToCart);
+    $(".openProduct").click(openProduct);
 }
 function displayProduct(el){
  return `
         <div class="d-flex flex-column justify-content-between col-sm-6 col-md-4 mb-3 mt-1">
-        <div class="productL p-4">
-        <div class="openProduct" data-id="${el.id}">
-        <a href="product.html" class="m-0 p-0">
-        <img class="" src="${el.image}" alt="${el.name} ">
-        </a>
-        </div>
-        <div>
-        <p> ${el.name}</p>
-        <p>${displayHearts(el.hearts)}</p>
-        <p> ${el.description.short}</p>
-        <p> ${el.price}</p>
-        </div>
-        </div>
-        <button class="addToCart btnsml btnW B mx-auto p-2 buttonSize " dataid="${el.id}">add to cart</button>
+            <div class="productL p-4">
+                <div class="openProduct" data-id="${el.id}">
+                    <a href="product.html" class="m-0 p-0">
+                        <img class="" src="${el.image}" alt="${el.name} ">
+                    </a>
+                </div>
+                <div>
+                    <p> ${el.name}</p>
+                    <p>${displayHearts(el.hearts)}</p>
+                    <p> ${el.description.short}</p>
+                    <p> ${el.price}</p>
+                </div>
+            </div>
+            <button class="addToCart btnsml btnW B mx-auto p-2 buttonSize " data-id="${el.id}">add to cart</button>
         </div>
         `;
 }
@@ -112,7 +114,7 @@ function displayCollections(data){
     $("#collections ul li a").click(filterCollections);
 }
 function displayLiTags(id, data){
-return `<li class="pt-2"><a href="#" data-${id}="${data.id}">${data.name}</a></li>`
+    return `<li class="pt-2"><a href="#" data-${id}="${data.id}">${data.name}</a></li>`
 }
 /* FILTER */
 function toggleFilters(){
@@ -130,48 +132,42 @@ function filterByX(){
                     if(A > B) return priceSort == "lth" ? 1 : -1;
                     else if(A < B) return priceSort == "lth" ? -1 : 1;
                     else return 0;
-
-});
-if(category && category != "all")
- data = data.filter(x => x.category.id == category);
- if(collection && collection!="all")
- data = data.filter(x => x.collection.id == collection);
-
- displayProducts(data);
- });
+                });
+                if(category && category != "all") data = data.filter(x => x.category.id == category);
+                if(collection && collection!="all") data = data.filter(x => x.collection.id == collection);
+    displayProducts(data);
+    });
 }
 //search
 function searchFilter(){
- const typedIn = this.value;
- ajaxProducts(function(data){
- searched = searchKeyup(typedIn, data);
- displayProducts(searched)
- })
-
+    const typedIn = this.value;
+        ajaxProducts(function(data){
+            searched = searchKeyup(typedIn, data);
+            displayProducts(searched)
+        })
 }
 function searchKeyup(typedIn, data){
- return data.filter(el => (el.name.toLowerCase().indexOf(typedIn.toLowerCase()) !==
--1) || (el.description.short.toLowerCase().indexOf(typedIn.toLowerCase()) !== -1));
+    return data.filter(el => (el.name.toLowerCase().indexOf(typedIn.toLowerCase()) !==-1) || (el.description.short.toLowerCase().indexOf(typedIn.toLowerCase()) !== -1));
 }
 //categories
 function filterCategories(e){
- e.preventDefault()
- const idCat= this.dataset.idcat
- localStorage.setItem("idCat", idCat)
- filterByX();
+    e.preventDefault()
+    const idCat= this.dataset.idcat
+    localStorage.setItem("idCat", idCat)
+    filterByX();
 }
 //collection
 function filterCollections(e){
- e.preventDefault()
- const idCol= this.dataset.idcol
- localStorage.setItem("idCol", idCol)
- filterByX();
+    e.preventDefault()
+    const idCol= this.dataset.idcol
+    localStorage.setItem("idCol", idCol)
+    filterByX();
 }
    /* SORT */
    function sortPrice(){
-    const idPrice = this.value;
-    localStorage.setItem("idPrice", idPrice);
-    filterByX();
+        const idPrice = this.value;
+        localStorage.setItem("idPrice", idPrice);
+        filterByX();
    }
    function displayHearts(x){
     html="";
@@ -186,3 +182,4 @@ function filterCollections(e){
     }
     return html;
    }
+  

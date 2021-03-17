@@ -72,23 +72,46 @@ function footer(){
     });
 }
 function displayFooter(data){
-    html=`
-    <div id="social" class="ml-md-5">
-        <h5>SLTS Social</h5>
-        <ul id="socialUL"></ul>
-    </div>
-    <div id="documents" class="ml-md-5">
-        <h5>Files</h5>
-        <ul id="documentsUL"></ul>
-    </div>
-    <div class="w-100 d-sm-none"></div>
-    <div id="authorF" class="ml-lg-5">
-        <h5>Author</h5>
-        <ul id="authorUL"></ul>
-    </div>`;
+    html=`<div class="container-fluid mb-4">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-sm-12 col-md-4">
+                        <ul class="list-unstyled  text-center pt-5">
+                            <li class="text-white"><i class="fas fa-phone pr-2"></i>+381 63678643</li>
+                            <li class="text-white"><i class="fab fa-instagram pr-2"></i>slts.belgrade</li>
+                            <li class="text-white"><i class="fas fa-envelope pr-2"></i>sltsKK@gmail.com</li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-12 col-md-4 text-center pt-5 mt-4">
+                        <span class="text-white caption">Young spirit smells well &reg; </span>
+                    </div>
+                    <div class="col-sm-12 col-md-4">
+                        <ul class="list-unstyled  text-center pt-5">
+                            <li class="text-white"><i class="fas fa-search-location pr-2"></i>Knez Mihajlova 26, Dorcol, Beograd</li>
+                            <li class="text-white"><i class="fas fa-search-location pr-2"></i>Igmanska 10, Zvezdara, Beograd</li>
+                            <li class="text-white"><i class="fas fa-search-location pr-2"></i>Dunavska 34, Dorcol, Beograd</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row text-center mt-5">  
+                    <div id="social" class="col-md-4 col-sm-12">
+                        <h5>SLTS Social</h5>
+                        <ul id="socialUL" class="mt-3"></ul>
+                    </div>
+                    <div id="documents" class="col-md-4 col-sm-12">
+                        <h5>Files</h5>
+                        <ul id="documentsUL" class="mt-3"></ul>
+                    </div>
+                    <div id="authorF" class="col-md-4 col-sm-12">
+                        <h5>Author</h5>
+                        <ul id="authorUL" class="mt-3"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>`;
 
     document.querySelector("#footer").innerHTML +=html;
-    displayFooterData(data)
+    displayFooterData(data);
    }
    function displayFooterData(data){
     data.forEach(el=>{

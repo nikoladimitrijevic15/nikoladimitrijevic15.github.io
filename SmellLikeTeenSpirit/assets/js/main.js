@@ -2,6 +2,7 @@ $(document).ready(function(){
     slider();
     productsMonth();
    });
+   
    /* SLIDER */
    function slider(){
    
@@ -69,9 +70,9 @@ function productsMonth(){
                     });
         }
 function displayProducts(data){
-        let html = ""
+        let html = "";
         data.forEach(el => {
-                    html += displayProduct(el)
+                    html += displayProduct(el);
                     });
 
         document.querySelector("#topRated").innerHTML = html;
@@ -94,7 +95,7 @@ function displayProduct(el){
                             <p> ${el.price}</p>
                         </div>
                     </div>
-                    <button class="addToCart btnsml btnW B mx-auto p-2 buttonSize " dataid="${el.id}">add to cart</button>
+                    <button class="addToCart btnsml btnW B mx-auto p-2 buttonSize " data-id="${el.id}">add to cart</button>
                 </div> `;
 }
 function displayHearts(x){
